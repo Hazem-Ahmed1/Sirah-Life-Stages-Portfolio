@@ -432,15 +432,6 @@ document.addEventListener('DOMContentLoaded', function () {
     initPhotoItems();
     initScrollShadow();
 
-    // Restore bubble preference
-    const bubblePref = localStorage.getItem('bubblesActive');
-    if (bubblePref === 'false') {
-        bubblesActive = false;
-        const btn = document.getElementById('bubbleToggle');
-        const container = document.getElementById('bubbleContainer');
-        if (btn) btn.classList.add('paused');
-        if (container) container.classList.add('paused');
-    } else {
-        startBubbles();
-    }
+    // Always start bubbles
+    startBubbles();
 });

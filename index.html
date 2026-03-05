@@ -24,22 +24,20 @@
                 <!-- Right Side: Main nav buttons -->
                 <div class="nav-right">
                     <button id="editProfileBtn" class="nav-btn nav-btn-primary active" data-translate="navEditProfile">
-                        <i class="fas fa-user-edit"></i> تعديل الملف
+                        <i class="fas fa-user-edit"></i> مرحلة الطفولة
                     </button>
                     <a href="#" class="nav-btn" data-translate="navAttendance">
-                        <i class="fas fa-shield-alt"></i> المراهقة
+                        <i class="fas fa-shield-alt"></i> مرحلة المراهقة
                     </a>
                     <a href="#" class="nav-btn" data-translate="navSeller">
-                        <i class="fas fa-user"></i> الشباب
+                        <i class="fas fa-user"></i>مرحلة الشباب 
                     </a>
                     <a href="#" class="nav-btn" data-translate="navExpenses">
-                        <i class="fas fa-file-invoice-dollar"></i> النفقة
+                        <i class="fas fa-file-invoice-dollar"></i> مرحلة البلوغ
                     </a>
                     <button class="lang-btn" id="langBtnAr" onclick="toggleLanguage()">ع</button>
                     <button class="lang-btn lang-btn-en" id="langBtnEn" onclick="toggleLanguage()">EN</button>
-                    <button class="bubble-toggle-btn" id="bubbleToggle" onclick="toggleBubbles()" title="Toggle Bubbles">
-                        <i class="fas fa-soap" id="bubbleIcon"></i>
-                    </button>
+
                 </div>
 
                 <!-- Center: Theme Picker -->
@@ -77,8 +75,9 @@
         <!-- Profile Info overlay at bottom-right of cover -->
         <div class="cover-profile-info">
             <div class="cover-profile-text">
-                <p style="color: white;" >انا اسمي </p>
+                <p class="cover-bio" >انا اسمي </p>
                 <h1 class="cover-name" data-translate="profileName">محمد عبدالله</h1>
+                <p class="cover-bio" > و عمري 23 سنة </p>
                 <div class="cover-badges" id="coverBadges">
                     <span class="cover-badge" data-translate="badgeChildhood">صدقة الطفولة</span>
                 </div>
@@ -127,7 +126,7 @@
                 <li><a href="#tab-height" class="tab-link" data-translate="tabHeight"><i class="fas fa-ruler-vertical"></i> الطول<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
                 <li><a href="#tab-certificates" class="tab-link" data-translate="tabCertificates"><i class="fas fa-certificate"></i> الشهادات<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
                 <li><a href="#tab-education" class="tab-link" data-translate="tabEducation"><i class="fas fa-graduation-cap"></i> التعليم<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
-                <li><a href="#tab-info" class="tab-link" data-translate="tabInfo"><i class="fas fa-info-circle"></i> المعلومات<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
+                <li><a href="#tab-info" class="tab-link" data-translate="tabInfo"><i class="fas fa-calendar-check"></i> الأحداث<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
             </ul>
         </div>
     </section>
@@ -145,51 +144,129 @@
                         <!-- Home Tab (active) -->
                         <div class="tab-panel active" id="tab-home">
 
-                            <!-- Post Card 1: Graduation -->
-                            <div class="post-card scroll-reveal">
-                                <div class="post-gradient" style="background: linear-gradient(135deg, #e65100 0%, #ff9800 50%, #ffb74d 100%);">
-                                    <span class="post-badge post-badge-green" data-translate="badgeSuccess">ناجح</span>
-                                    <div class="post-icon-area">
-                                        <i class="fas fa-graduation-cap post-main-icon"></i>
-                                    </div>
+                            <!-- Latest Events Section -->
+                            <div class="home-events-section">
+                                <div class="home-events-header">
+                                    <h3><i class="fas fa-calendar-check"></i> آخر الأحداث</h3>
+                                    <a href="#tab-info" class="home-events-viewall" id="homeViewAllEvents"><i class="fas fa-arrow-left"></i> عرض الكل</a>
                                 </div>
-                                <div class="post-body">
-                                    <h4 class="post-title" data-translate="post1Title">حفل التخرج من الجامعة</h4>
-                                    <p class="post-desc" data-translate="post1Desc">حصل محمد على شهادة البكالوريوس في هندسة الحاسب مع مرتبة الشرف الأولى.</p>
-                                    <div class="post-meta">
-                                        <span><i class="fas fa-calendar-alt"></i> <span data-translate="post1Date">10 يونيو 2022</span></span>
-                                        <span><i class="fas fa-clock"></i> <span data-translate="post1Time">10:00 صباحاً</span></span>
-                                        <span><i class="fas fa-map-marker-alt"></i> <span data-translate="post1Location">الرياض</span></span>
-                                    </div>
-                                    <div class="post-media-btns">
-                                        <button class="media-btn media-btn-blue"><i class="fas fa-th"></i></button>
-                                        <button class="media-btn media-btn-green"><i class="fas fa-image"></i></button>
-                                        <button class="media-btn media-btn-dark"><i class="fas fa-video"></i></button>
-                                    </div>
-                                </div>
-                            </div>
+                                <div class="events-list">
 
-                            <!-- Post Card 2: Award -->
-                            <div class="post-card scroll-reveal">
-                                <div class="post-gradient" style="background: linear-gradient(135deg, #ad1457 0%, #e91e63 50%, #f48fb1 100%);">
-                                    <span class="post-badge post-badge-purple" data-translate="badgeWinner">فائز</span>
-                                    <div class="post-icon-area">
-                                        <i class="fas fa-check-double post-main-icon" style="font-size:2rem;"></i>
-                                        <i class="fas fa-star post-main-icon" style="color:#ffd600; font-size:2.5rem; margin-top:-10px;"></i>
+                                    <!-- Home Event 1 (Event 5) -->
+                                    <div class="event-card scroll-reveal" data-event-year="2024"
+                                         data-evt-title="أول يوم في الروضة"
+                                         data-evt-type="تعليم"
+                                         data-evt-badge="تعليم"
+                                         data-evt-badge-class="evt-education"
+                                         data-evt-stage="5 سنوات"
+                                         data-evt-day="الأحد"
+                                         data-evt-date="1 سبتمبر 2024"
+                                         data-evt-time="7:30 صباحاً"
+                                         data-evt-desc="أول يوم لمحمد في الروضة الدولية. كان متحمساً ومتوتراً قليلاً لكنه سرعان ما تأقلم مع زملائه الجدد. بداية رائعة لمسيرته التعليمية."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-education"><i class="fas fa-school"></i> تعليم</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=300&fit=crop" alt="">
+                                            </div>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تعليم</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 5 سنوات</span>
+                                                </div>
+                                                <h4 class="event-card-title">أول يوم في الروضة</h4>
+                                                <p class="event-card-desc">أول يوم لمحمد في الروضة. بداية رائعة لمسيرته التعليمية مع أصدقاء جدد.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الأحد</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 1 سبتمبر 2024</span>
+                                                    <span><i class="fas fa-clock"></i> 7:30 صباحاً</span>
+                                                </div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="post-body">
-                                    <h4 class="post-title" data-translate="post2Title">جائزة التميز الأكاديمي</h4>
-                                    <p class="post-desc" data-translate="post2Desc">فاز محمد بجائزة التميز الأكاديمي من وزارة التعليم.</p>
-                                    <div class="post-meta">
-                                        <span><i class="fas fa-calendar-alt"></i> <span data-translate="post2Date">5 مايو 2021</span></span>
-                                        <span><i class="fas fa-clock"></i> <span data-translate="post2Time">2:00 مساءً</span></span>
+
+                                    <!-- Home Event 2 (Event 6) -->
+                                    <div class="event-card scroll-reveal" data-event-year="2025"
+                                         data-evt-title="حفل تخرج الروضة"
+                                         data-evt-type="تخرج"
+                                         data-evt-badge="إنجاز"
+                                         data-evt-badge-class="evt-milestone"
+                                         data-evt-stage="6 سنوات"
+                                         data-evt-day="الخميس"
+                                         data-evt-date="20 يونيو 2025"
+                                         data-evt-time="6:00 مساءً"
+                                         data-evt-desc="تخرج محمد من الروضة بتفوق وامتياز. حفل رائع بحضور الأهل والأصدقاء تضمن عروض مسرحية وأناشيد. لحظات فخر واعتزاز."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&h=500&fit=crop"]'
+                                         data-evt-video="https://www.w3schools.com/html/mov_bbb.mp4">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-milestone"><i class="fas fa-trophy"></i> إنجاز</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=600&h=300&fit=crop" alt="">
+                                            </div>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تخرج</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 6 سنوات</span>
+                                                </div>
+                                                <h4 class="event-card-title">حفل تخرج الروضة</h4>
+                                                <p class="event-card-desc">تخرج بتفوق وامتياز. حفل رائع بحضور الأهل والأصدقاء.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الخميس</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 20 يونيو 2025</span>
+                                                    <span><i class="fas fa-clock"></i> 6:00 مساءً</span>
+                                                </div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                    <button class="media-btn media-btn-dark evt-btn-video" title="فيديو"><i class="fas fa-video"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="post-media-btns">
-                                        <button class="media-btn media-btn-blue"><i class="fas fa-th"></i></button>
-                                        <button class="media-btn media-btn-green"><i class="fas fa-image"></i></button>
-                                        <button class="media-btn media-btn-dark"><i class="fas fa-video"></i></button>
+
+                                    <!-- Home Event 3 (Event 7) -->
+                                    <div class="event-card scroll-reveal" data-event-year="2026"
+                                         data-evt-title="أول يوم في المدرسة الابتدائية"
+                                         data-evt-type="تعليم"
+                                         data-evt-badge="بداية جديدة"
+                                         data-evt-badge-class="evt-education"
+                                         data-evt-stage="6 سنوات"
+                                         data-evt-day="الأحد"
+                                         data-evt-date="7 سبتمبر 2025"
+                                         data-evt-time="6:45 صباحاً"
+                                         data-evt-desc="أول يوم لمحمد في المرحلة الابتدائية بمدرسة النخبة الأهلية. ارتدى الزي المدرسي بفخر وكان متحمساً للقاء معلمه الجديد وزملائه."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-education"><i class="fas fa-school"></i> بداية جديدة</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=300&fit=crop" alt="">
+                                            </div>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تعليم</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 6 سنوات</span>
+                                                </div>
+                                                <h4 class="event-card-title">أول يوم في المدرسة الابتدائية</h4>
+                                                <p class="event-card-desc">أول يوم في الابتدائية. ارتدى الزي المدرسي بفخر ولقاء زملاء جدد.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الأحد</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 7 سبتمبر 2025</span>
+                                                    <span><i class="fas fa-clock"></i> 6:45 صباحاً</span>
+                                                </div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -853,164 +930,307 @@
                         </div>
                         <!-- Info Tab -->
                         <div class="tab-panel" id="tab-info">
-                            <div class="info-section">
+                            <div class="events-section">
                                 <!-- Header -->
-                                <div class="info-header">
-                                    <div class="info-header-info">
-                                        <div class="info-header-icon">
-                                            <img src="https://cdn-icons-png.flaticon.com/128/3468/3468377.png" alt="info" class="cartoon-icon">
+                                <div class="events-header">
+                                    <div class="events-header-info">
+                                        <div class="events-header-icon">
+                                            <img src="https://cdn-icons-png.flaticon.com/128/3468/3468377.png"  alt="events" class="img-fluid cartoon-icon">
                                         </div>
                                         <div>
-                                            <h3 class="info-section-title" data-translate="infoTitle">المعلومات الشخصية</h3>
-                                            <p class="info-section-sub" data-translate="infoSubtitle">تفاصيل وأحداث مهمة في حياة الطفل</p>
+                                            <h3 class="events-section-title">الأحداث</h3>
+                                            <p class="events-section-sub">جميع الأحداث والمناسبات المهمة</p>
                                         </div>
                                     </div>
-                                    <button class="collect-btn collect-btn-orange" id="addInfoBtn">
-                                        <span class="collect-btn-text" data-translate="btnAddInfo">إضافة معلومة</span>
-                                        <span class="collect-btn-bubbles">
-                                            <span class="collect-bubble cb-1"></span>
-                                            <span class="collect-bubble cb-2"></span>
-                                            <span class="collect-bubble cb-3"></span>
-                                        </span>
-                                    </button>
                                 </div>
 
-                                <!-- Information Cards Grid -->
-                                <div class="info-cards-grid" id="infoCardsGrid">
-                                    
-                                    <!-- Sample Info Card 1 -->
-                                    <div class="info-card-wrap scroll-reveal" data-image-group="info-1">
-                                        <div class="info-card">
-                                            <div class="info-event-badge event-milestone">
-                                                <i class="fas fa-star"></i>
-                                                <span>إنجاز شخصي</span>
+                                <!-- Year Filter -->
+                                <div class="mt-4 events-filter">
+                                    <button class="events-filter-btn active" data-year="all"><i class="fas fa-layer-group"></i> الكل</button>
+                                    <button class="events-filter-btn" data-year="2020">2019 - 2020</button>
+                                    <button class="events-filter-btn" data-year="2021">2020 - 2021</button>
+                                    <button class="events-filter-btn" data-year="2022">2021 - 2022</button>
+                                    <button class="events-filter-btn" data-year="2023">2022 - 2023</button>
+                                    <button class="events-filter-btn" data-year="2024">2023 - 2024</button>
+                                    <button class="events-filter-btn" data-year="2025">2024 - 2025</button>
+                                    <button class="events-filter-btn" data-year="2026">2025 - 2026</button>
+                                </div>
+
+                                <!-- Events List -->
+                                <div class="events-list" id="eventsList">
+
+                                    <!-- Event 1 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2020"
+                                         data-evt-title="أول خطوات محمد"
+                                         data-evt-type="إنجاز"
+                                         data-evt-badge="إنجاز شخصي"
+                                         data-evt-badge-class="evt-milestone"
+                                         data-evt-stage="الطفولة المبكرة"
+                                         data-evt-day="الأحد"
+                                         data-evt-date="15 مارس 2020"
+                                         data-evt-time="3:30 مساءً"
+                                         data-evt-desc="خطا محمد أولى خطواته بمفرده اليوم! كانت لحظة مذهلة ومؤثرة للعائلة بأكملها. بدأ بالمشي متمسكاً بالأثاث ثم تجرأ وخطا 5 خطوات بمفرده نحو والدته."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1519340333755-56e9c1d3611c?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-milestone"><i class="fas fa-star"></i> إنجاز شخصي</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1519340333755-56e9c1d3611c?w=600&h=300&fit=crop" alt="">
                                             </div>
-                                            <div class="info-card-thumbnail">
-                                                <img src="https://images.unsplash.com/photo-1519340333755-56e9c1d3611c?w=600&h=300&fit=crop" alt="first steps">
-                                            </div>
-                                            <div class="info-card-body">
-                                                <div class="info-meta-row">
-                                                    <span class="info-event-type"><i class="fas fa-bookmark"></i> نوع الحدث: <strong>إنجاز</strong></span>
-                                                    <span class="info-age-stage"><i class="fas fa-child"></i> المرحلة: <strong>الطفولة المبكرة</strong></span>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> إنجاز</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> الطفولة المبكرة</span>
                                                 </div>
-                                                <h4 class="info-card-title">أول خطوات محمد</h4>
-                                                <p class="info-card-details">خطا محمد أولى خطواته بمفرده اليوم! كانت لحظة مذهلة ومؤثرة للعائلة بأكملها. بدأ بالمشي متمسكاً بالأثاث ثم تجرأ وخطا 5 خطوات بمفرده نحو والدته. فخر وسعادة لا توصف!</p>
-                                                <div class="info-date-info">
-                                                    <span class="info-day-name">الأحد</span>
-                                                    <span class="info-date"><i class="fas fa-calendar-alt"></i> 15 مارس 2020</span>
-                                                    <span class="info-time"><i class="fas fa-clock"></i> 3:30 مساءً</span>
+                                                <h4 class="event-card-title">أول خطوات محمد</h4>
+                                                <p class="event-card-desc">خطا محمد أولى خطواته بمفرده اليوم! كانت لحظة مذهلة ومؤثرة للعائلة بأكملها.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الأحد</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 15 مارس 2020</span>
+                                                    <span><i class="fas fa-clock"></i> 3:30 مساءً</span>
                                                 </div>
-                                                <div class="info-photos-row">
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=150&h=150&fit=crop" alt=""></div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
                                                 </div>
-                                            </div>
-                                            <div class="info-card-footer">
-                                                <button class="btn-delete-info" title="حذف"><i class="fas fa-trash-alt"></i></button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Sample Info Card 2 -->
-                                    <div class="info-card-wrap scroll-reveal-left" data-image-group="info-2">
-                                        <div class="info-card">
-                                            <div class="info-event-badge event-medical">
-                                                <i class="fas fa-heartbeat"></i>
-                                                <span>صحة</span>
+                                    <!-- Event 2 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2020"
+                                         data-evt-title="التطعيمات الأساسية الكاملة"
+                                         data-evt-type="طبي"
+                                         data-evt-badge="صحة"
+                                         data-evt-badge-class="evt-medical"
+                                         data-evt-stage="سنة واحدة"
+                                         data-evt-day="الثلاثاء"
+                                         data-evt-date="8 أبريل 2020"
+                                         data-evt-time="10:00 صباحاً"
+                                         data-evt-desc="أكمل محمد جميع التطعيمات الأساسية المقررة لعمر السنة الأولى. الطبيب أكد أن نموه طبيعي وصحته ممتازة. وزنه 10.5 كجم وطوله 76 سم."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-medical"><i class="fas fa-heartbeat"></i> صحة</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=300&fit=crop" alt="">
                                             </div>
-                                            <div class="info-card-thumbnail">
-                                                <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=300&fit=crop" alt="medical">
-                                            </div>
-                                            <div class="info-card-body">
-                                                <div class="info-meta-row">
-                                                    <span class="info-event-type"><i class="fas fa-bookmark"></i> نوع الحدث: <strong>طبي</strong></span>
-                                                    <span class="info-age-stage"><i class="fas fa-child"></i> المرحلة: <strong>سنة واحدة</strong></span>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> طبي</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> سنة واحدة</span>
                                                 </div>
-                                                <h4 class="info-card-title">التطعيمات الأساسية الكاملة</h4>
-                                                <p class="info-card-details">أكمل محمد جميع التطعيمات الأساسية المقررة لعمر السنة الأولى. زيارة المركز الصحي كانت ناجحة والطبيب أكد أن نموه طبيعي وصحته ممتازة. وزنه 10.5 كجم وطوله 76 سم.</p>
-                                                <div class="info-date-info">
-                                                    <span class="info-day-name">الثلاثاء</span>
-                                                    <span class="info-date"><i class="fas fa-calendar-alt"></i> 8 أبريل 2020</span>
-                                                    <span class="info-time"><i class="fas fa-clock"></i> 10:00 صباحاً</span>
+                                                <h4 class="event-card-title">التطعيمات الأساسية الكاملة</h4>
+                                                <p class="event-card-desc">أكمل محمد جميع التطعيمات الأساسية. الطبيب أكد أن نموه طبيعي وصحته ممتازة.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الثلاثاء</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 8 أبريل 2020</span>
+                                                    <span><i class="fas fa-clock"></i> 10:00 صباحاً</span>
                                                 </div>
-                                                <div class="info-photos-row">
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=150&h=150&fit=crop" alt=""></div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
                                                 </div>
-                                            </div>
-                                            <div class="info-card-footer">
-                                                <button class="btn-delete-info" title="حذف"><i class="fas fa-trash-alt"></i></button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Sample Info Card 3 -->
-                                    <div class="info-card-wrap scroll-reveal" data-image-group="info-3">
-                                        <div class="info-card">
-                                            <div class="info-event-badge event-social">
-                                                <i class="fas fa-users"></i>
-                                                <span>اجتماعي</span>
+                                    <!-- Event 3 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2022"
+                                         data-evt-title="حفل عيد الميلاد الثالث"
+                                         data-evt-type="احتفال"
+                                         data-evt-badge="اجتماعي"
+                                         data-evt-badge-class="evt-social"
+                                         data-evt-stage="3 سنوات"
+                                         data-evt-day="السبت"
+                                         data-evt-date="22 يوليو 2022"
+                                         data-evt-time="5:00 مساءً"
+                                         data-evt-desc="احتفال كبير بعيد ميلاد محمد الثالث مع العائلة والأصدقاء. حضر 25 طفلاً من روضة الأطفال. كعكة جميلة على شكل سيارة. محمد سعيد جداً!"
+                                         data-evt-photos='["https://images.unsplash.com/photo-1530023367847-a683933f4172?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&h=500&fit=crop"]'
+                                         data-evt-video="https://www.w3schools.com/html/mov_bbb.mp4">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-social"><i class="fas fa-users"></i> اجتماعي</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?w=600&h=300&fit=crop" alt="">
                                             </div>
-                                            <div class="info-card-thumbnail">
-                                                <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?w=600&h=300&fit=crop" alt="birthday">
-                                            </div>
-                                            <div class="info-card-body">
-                                                <div class="info-meta-row">
-                                                    <span class="info-event-type"><i class="fas fa-bookmark"></i> نوع الحدث: <strong>احتفال</strong></span>
-                                                    <span class="info-age-stage"><i class="fas fa-child"></i> المرحلة: <strong>3 سنوات</strong></span>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> احتفال</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 3 سنوات</span>
                                                 </div>
-                                                <h4 class="info-card-title">حفل عيد الميلاد الثالث</h4>
-                                                <p class="info-card-details">احتفال كبير بعيد ميلاد محمد الثالث مع العائلة والأصدقاء. حضر 25 طفلاً من روضة الأطفال. كانت هناك ألعاب ومسابقات وكعكة جميلة على شكل سيارة. محمد سعيد جداً بالهدايا والأصدقاء.</p>
-                                                <div class="info-date-info">
-                                                    <span class="info-day-name">السبت</span>
-                                                    <span class="info-date"><i class="fas fa-calendar-alt"></i> 22 يوليو 2022</span>
-                                                    <span class="info-time"><i class="fas fa-clock"></i> 5:00 مساءً</span>
+                                                <h4 class="event-card-title">حفل عيد الميلاد الثالث</h4>
+                                                <p class="event-card-desc">احتفال كبير مع العائلة والأصدقاء. كعكة جميلة وألعاب ومسابقات وهدايا.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">السبت</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 22 يوليو 2022</span>
+                                                    <span><i class="fas fa-clock"></i> 5:00 مساءً</span>
                                                 </div>
-                                                <div class="info-photos-row">
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1467842515004-e4e50a56b62b?w=150&h=150&fit=crop" alt=""></div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                    <button class="media-btn media-btn-dark evt-btn-video" title="فيديو"><i class="fas fa-video"></i></button>
                                                 </div>
-                                            </div>
-                                            <div class="info-card-footer">
-                                                <button class="btn-delete-info" title="حذف"><i class="fas fa-trash-alt"></i></button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Sample Info Card 4 -->
-                                    <div class="info-card-wrap scroll-reveal-left" data-image-group="info-4">
-                                        <div class="info-card">
-                                            <div class="info-event-badge event-family">
-                                                <i class="fas fa-home"></i>
-                                                <span>عائلي</span>
+                                    <!-- Event 4 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2023"
+                                         data-evt-title="أول رحلة إلى البحر"
+                                         data-evt-type="رحلة"
+                                         data-evt-badge="عائلي"
+                                         data-evt-badge-class="evt-family"
+                                         data-evt-stage="4 سنوات"
+                                         data-evt-day="الخميس"
+                                         data-evt-date="12 سبتمبر 2023"
+                                         data-evt-time="طوال اليوم"
+                                         data-evt-desc="رحلة عائلية لا تُنسى إلى شاطئ البحر الأحمر. محمد رأى البحر للمرة الأولى وكان متحمساً جداً. لعب بالرمل، جمع الأصداف، وسبح مع والده. 3 أيام رائعة في جدة."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-family"><i class="fas fa-home"></i> عائلي</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=600&h=300&fit=crop" alt="">
                                             </div>
-                                            <div class="info-card-thumbnail">
-                                                <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=600&h=300&fit=crop" alt="family trip">
-                                            </div>
-                                            <div class="info-card-body">
-                                                <div class="info-meta-row">
-                                                    <span class="info-event-type"><i class="fas fa-bookmark"></i> نوع الحدث: <strong>رحلة</strong></span>
-                                                    <span class="info-age-stage"><i class="fas fa-child"></i> المرحلة: <strong>4 سنوات</strong></span>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> رحلة</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 4 سنوات</span>
                                                 </div>
-                                                <h4 class="info-card-title">أول رحلة إلى البحر</h4>
-                                                <p class="info-card-details">رحلة عائلية لا تُنسى إلى شاطئ البحر الأحمر. محمد رأى البحر للمرة الأولى وكان متحمساً جداً. لعب بالرمل، جمع الأصداف، وسبح مع والده. قضينا 3 أيام رائعة في جدة.</p>
-                                                <div class="info-date-info">
-                                                    <span class="info-day-name">الخميس</span>
-                                                    <span class="info-date"><i class="fas fa-calendar-alt"></i> 12 سبتمبر 2023</span>
-                                                    <span class="info-time"><i class="fas fa-clock"></i> طوال اليوم</span>
+                                                <h4 class="event-card-title">أول رحلة إلى البحر</h4>
+                                                <p class="event-card-desc">رحلة عائلية لا تُنسى إلى البحر الأحمر. لعب بالرمل وسبح مع والده.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الخميس</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 12 سبتمبر 2023</span>
+                                                    <span><i class="fas fa-clock"></i> طوال اليوم</span>
                                                 </div>
-                                                <div class="info-photos-row">
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&h=150&fit=crop" alt=""></div>
-                                                    <div class="info-extra-photo"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=150&h=150&fit=crop" alt=""></div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
                                                 </div>
-                                            </div>
-                                            <div class="info-card-footer">
-                                                <button class="btn-delete-info" title="حذف"><i class="fas fa-trash-alt"></i></button>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Event 5 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2024"
+                                         data-evt-title="أول يوم في الروضة"
+                                         data-evt-type="تعليم"
+                                         data-evt-badge="تعليم"
+                                         data-evt-badge-class="evt-education"
+                                         data-evt-stage="5 سنوات"
+                                         data-evt-day="الأحد"
+                                         data-evt-date="1 سبتمبر 2024"
+                                         data-evt-time="7:30 صباحاً"
+                                         data-evt-desc="أول يوم لمحمد في الروضة الدولية. كان متحمساً ومتوتراً قليلاً لكنه سرعان ما تأقلم مع زملائه الجدد. بداية رائعة لمسيرته التعليمية."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-education"><i class="fas fa-school"></i> تعليم</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=300&fit=crop" alt="">
+                                            </div>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تعليم</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 5 سنوات</span>
+                                                </div>
+                                                <h4 class="event-card-title">أول يوم في الروضة</h4>
+                                                <p class="event-card-desc">أول يوم لمحمد في الروضة. بداية رائعة لمسيرته التعليمية مع أصدقاء جدد.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الأحد</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 1 سبتمبر 2024</span>
+                                                    <span><i class="fas fa-clock"></i> 7:30 صباحاً</span>
+                                                </div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Event 6 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2025"
+                                         data-evt-title="حفل تخرج الروضة"
+                                         data-evt-type="تخرج"
+                                         data-evt-badge="إنجاز"
+                                         data-evt-badge-class="evt-milestone"
+                                         data-evt-stage="6 سنوات"
+                                         data-evt-day="الخميس"
+                                         data-evt-date="20 يونيو 2025"
+                                         data-evt-time="6:00 مساءً"
+                                         data-evt-desc="تخرج محمد من الروضة بتفوق وامتياز. حفل رائع بحضور الأهل والأصدقاء تضمن عروض مسرحية وأناشيد. لحظات فخر واعتزاز."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&h=500&fit=crop"]'
+                                         data-evt-video="https://www.w3schools.com/html/mov_bbb.mp4">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-milestone"><i class="fas fa-trophy"></i> إنجاز</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=600&h=300&fit=crop" alt="">
+                                            </div>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تخرج</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 6 سنوات</span>
+                                                </div>
+                                                <h4 class="event-card-title">حفل تخرج الروضة</h4>
+                                                <p class="event-card-desc">تخرج بتفوق وامتياز. حفل رائع بحضور الأهل والأصدقاء.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الخميس</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 20 يونيو 2025</span>
+                                                    <span><i class="fas fa-clock"></i> 6:00 مساءً</span>
+                                                </div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                    <button class="media-btn media-btn-dark evt-btn-video" title="فيديو"><i class="fas fa-video"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Event 7 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2026"
+                                         data-evt-title="أول يوم في المدرسة الابتدائية"
+                                         data-evt-type="تعليم"
+                                         data-evt-badge="بداية جديدة"
+                                         data-evt-badge-class="evt-education"
+                                         data-evt-stage="6 سنوات"
+                                         data-evt-day="الأحد"
+                                         data-evt-date="7 سبتمبر 2025"
+                                         data-evt-time="6:45 صباحاً"
+                                         data-evt-desc="أول يوم لمحمد في المرحلة الابتدائية بمدرسة النخبة الأهلية. ارتدى الزي المدرسي بفخر وكان متحمساً للقاء معلمه الجديد وزملائه."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=500&fit=crop"]'
+                                         data-evt-video="">
+                                        <div class="event-card-inner">
+                                            <span class="event-badge evt-education"><i class="fas fa-school"></i> بداية جديدة</span>
+                                            <div class="event-card-thumbnail">
+                                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=300&fit=crop" alt="">
+                                            </div>
+                                            <div class="event-card-body">
+                                                <div class="event-meta-tags">
+                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تعليم</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 6 سنوات</span>
+                                                </div>
+                                                <h4 class="event-card-title">أول يوم في المدرسة الابتدائية</h4>
+                                                <p class="event-card-desc">أول يوم في الابتدائية. ارتدى الزي المدرسي بفخر ولقاء زملاء جدد.</p>
+                                                <div class="event-date-row">
+                                                    <span class="event-day-name">الأحد</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 7 سبتمبر 2025</span>
+                                                    <span><i class="fas fa-clock"></i> 6:45 صباحاً</span>
+                                                </div>
+                                                <div class="post-media-btns">
+                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
+                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- No results message -->
+                                    <div class="events-no-results" id="eventsNoResults" style="display:none;">
+                                        <i class="fas fa-search" style="font-size:2rem;color:var(--text-muted);opacity:0.4;"></i>
+                                        <p>لا توجد أحداث في هذه الفترة</p>
                                     </div>
 
                                 </div>
@@ -1066,11 +1286,11 @@
                         </div>
                     </div>
 
-                    <!-- Photos / Badges Gallery Card -->
+                    <!-- Life Book Gallery Card -->
                     <div class="sidebar-card scroll-reveal-right">
                         <div class="sidebar-header">
-                            <h5><i class="fas fa-camera-retro"></i> <span data-translate="sidebarPhotos">الصور</span></h5>
-                            <a href="#" class="view-all-link" data-translate="viewAll">عرض الكل</a>
+                            <h5><i class="fas fa-book-open"></i> <span>كتاب الحياة</span></h5>
+                            <a href="#" class="view-all-link" id="openLifeBook">عرض كتاب الحياة</a>
                         </div>
                         <div class="sidebar-body">
                             <div class="photo-grid" id="sidebarPhotoGrid">
@@ -1084,443 +1304,8 @@
         </div>
     </section>
 
-    <!-- Edit Profile Modal -->
-    <div class="profile-modal" id="profileModal">
-        <div class="modal-overlay"></div>
-        
-        <div class="modal-content">
-            
-            <!-- Close Button -->
-            <button class="modal-close" id="closeModal">
-                <i class="fas fa-times"></i>
-            </button>
-            
-            <h2 class="modal-title" data-translate="modalTitle">تعديل الملف الشخصي</h2>
-            
-            <form id="profileForm" class="profile-form">
-                <!-- Profile Name -->
-                <div class="form-group">
-                    <label data-translate="labelName">الاسم</label>
-                    <input type="text" id="inputName" class="form-input" placeholder="محمد عبدالله">
-                </div>
-                
-                <!-- Tags/Nicknames Management -->
-                <div class="form-group">
-                    <label data-translate="labelTags">الألقاب (الشارات)</label>
-                    <div class="tags-input-wrapper">
-                        <input type="text" id="inputTag" class="form-input" placeholder="أضف لقب جديد">
-                        <button type="button" id="addTagBtn" class="btn-add-tag" data-translate="btnAddTag">
-                            <i class="fas fa-plus"></i> إضافة
-                        </button>
-                    </div>
-                    <div class="tags-container" id="tagsContainer"></div>
-                </div>
-                
-                <!-- Profile Bio -->
-                <div class="form-group">
-                    <label data-translate="labelBio">النبذة التعريفية</label>
-                    <textarea id="inputBio" class="form-input form-textarea" rows="3" placeholder="طفلي عزاز يحب الاستكشاف والتعليم 🎓"></textarea>
-                </div>
-                
-                <!-- Profile Image Upload -->
-                <div class="form-group">
-                    <label data-translate="labelProfileImage">صورة الملف الشخصي</label>
-                    <div class="file-upload-box" id="profileUploadBox">
-                        <input type="file" id="inputProfileImage" class="file-input" accept="image/*">
-                        <label for="inputProfileImage" class="file-drop-label">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                            <span class="file-selected-name" id="profileFileName"></span>
-                        </label>
-                    </div>
-                    <small class="form-hint" data-translate="hintProfileImage">اترك فارغاً لاستخدام الأيقونة الافتراضية</small>
-                </div>
-                
-                <!-- Cover Image Upload -->
-                <div class="form-group">
-                    <label data-translate="labelCoverImage">صورة الغلاف</label>
-                    <div class="file-upload-box" id="coverUploadBox">
-                        <input type="file" id="inputCoverImage" class="file-input" accept="image/*">
-                        <label for="inputCoverImage" class="file-drop-label">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                            <span class="file-selected-name" id="coverFileName"></span>
-                        </label>
-                    </div>
-                    <small class="form-hint" data-translate="hintCoverImage">اترك فارغاً لاستخدام التدرج الافتراضي</small>
-                </div>
-                
-                <!-- Submit Buttons -->
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit" data-translate="btnSave">
-                        <i class="fas fa-save"></i> حفظ التغييرات
-                    </button>
-                    <button type="button" class="btn-cancel" id="cancelBtn" data-translate="btnCancel">
-                        <i class="fas fa-times"></i> إلغاء
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Birth Editor Modal -->
-    <div class="birth-modal" id="birthModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeBirthModal"><i class="fas fa-times"></i></button>
-            <h2 class="modal-title" data-translate="birthModalTitle">تعديل بيانات الولادة</h2>
-            <form id="birthForm" class="profile-form">
-                <div class="form-group">
-                    <label data-translate="birthName">اسم المولود</label>
-                    <input type="text" id="inputBirthName" class="form-input">
-                </div>
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label data-translate="birthDateLabel">تاريخ الولادة</label>
-                        <input type="date" id="inputBirthDate" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label data-translate="birthTimeLabel">وقت الولادة</label>
-                        <input type="time" id="inputBirthTime" class="form-input">
-                    </div>
-                </div>
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label data-translate="birthHeightLabel">الطول عند الولادة (سم)</label>
-                        <input type="number" step="0.1" id="inputBirthHeight" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label data-translate="birthWeightLabel">الوزن عند الولادة (كج)</label>
-                        <input type="number" step="0.01" id="inputBirthWeight" class="form-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label data-translate="birthPlaceLabel">مكان الولادة</label>
-                    <input type="text" id="inputBirthPlace" class="form-input">
-                </div>
-                <div class="form-group">
-                    <label data-translate="footprintTitle">بصمة القدم</label>
-                    <div class="file-upload-box" id="footprintUploadBox">
-                        <input type="file" id="inputFootprint" class="file-input" accept="image/*">
-                        <label for="inputFootprint" class="file-drop-label">
-                            <i class="fas fa-shoe-prints"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                            <span class="file-selected-name" id="footprintFileName"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label data-translate="birthPhotosTitle">صور الولادة</label>
-                    <div class="file-upload-box" id="birthPhotosUploadBox">
-                        <input type="file" id="inputBirthPhotos" class="file-input" accept="image/*" multiple>
-                        <label for="inputBirthPhotos" class="file-drop-label">
-                            <i class="fas fa-images"></i>
-                            <span class="file-drop-text" data-translate="addBirthPhotos">أضف صور الولادة (يمكن أكثر من صورة)</span>
-                            <span class="file-selected-name" id="birthPhotosFileName"></span>
-                        </label>
-                    </div>
-                    <div class="birth-photos-preview" id="birthPhotosPreview"></div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit" data-translate="btnSave"><i class="fas fa-save"></i> حفظ التغييرات</button>
-                    <button type="button" class="btn-cancel" id="cancelBirthBtn" data-translate="btnCancel"><i class="fas fa-times"></i> إلغاء</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
     <!-- Bubble Container -->
     <div class="bubble-container" id="bubbleContainer"></div>
-
-    <!-- Height Measurement Modal -->
-    <div class="height-modal" id="heightModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeHeightModal"><i class="fas fa-times"></i></button>
-            <h2 class="modal-title" data-translate="heightModalTitle">إضافة قياس جديد</h2>
-            <form id="heightForm" class="profile-form">
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label><i class="fas fa-ruler-vertical" style="color:#e91e63"></i> <span data-translate="measureHeight">الطول (سم)</span></label>
-                        <input type="number" step="0.1" id="inputMeasureHeight" class="form-input" placeholder="120">
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-arrows-alt-h" style="color:#9c27b0"></i> <span data-translate="measureWidth">العرض (سم)</span></label>
-                        <input type="number" step="0.1" id="inputMeasureWidth" class="form-input" placeholder="40">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-child" style="color:#ff9800"></i> <span data-translate="measureStage">العمر أو المرحلة</span></label>
-                    <input type="text" id="inputMeasureStage" class="form-input" data-translate-placeholder="measureStagePlaceholder" placeholder="مثل: 6 أشهر، سنة، مرحلة الحبو...">
-                </div>
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label><i class="fas fa-calendar-alt" style="color:#1976d2"></i> <span data-translate="measureDate">التاريخ</span></label>
-                        <input type="date" id="inputMeasureDate" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-clock" style="color:#00bcd4"></i> <span data-translate="measureTime">الوقت</span></label>
-                        <input type="time" id="inputMeasureTime" class="form-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-image" style="color:#4caf50"></i> <span data-translate="measureImage">صورة (اختياري)</span></label>
-                    <div class="file-upload-box" id="measureImageUploadBox">
-                        <input type="file" id="inputMeasureImage" class="file-input" accept="image/*">
-                        <label for="inputMeasureImage" class="file-drop-label">
-                            <i class="fas fa-camera"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                            <span class="file-selected-name" id="measureImageFileName"></span>
-                        </label>
-                    </div>
-                    <div class="measure-image-preview" id="measureImagePreview"></div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="collect-btn collect-btn-green" style="flex:1;justify-content:center">
-                        <span class="collect-btn-text" data-translate="btnSaveMeasurement">حفظ القياس</span>
-                        <span class="collect-btn-bubbles">
-                            <span class="collect-bubble cb-1"></span>
-                            <span class="collect-bubble cb-2"></span>
-                            <span class="collect-bubble cb-3"></span>
-                        </span>
-                    </button>
-                    <button type="button" class="btn-cancel" id="cancelHeightBtn" data-translate="btnCancel">
-                        <i class="fas fa-times"></i> إلغاء
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Education Modal -->
-    <div class="edu-modal" id="eduModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeEduModal"><i class="fas fa-times"></i></button>
-            <h2 class="modal-title" data-translate="btnAddEdu">إضافة حدث تعليمي</h2>
-            <form id="eduForm" class="profile-form">
-                <div class="form-group">
-                    <label><i class="fas fa-graduation-cap" style="color:#1976d2"></i> <span data-translate="eduStageLabel">المرحلة التعليمية</span></label>
-                    <select id="inputEduStage" class="form-input form-select-custom">
-                        <option value="earlyChildhood" data-translate="stageEarlyChildhood">طفولة مبكرة</option>
-                        <option value="kindergarten" data-translate="stageKindergarten">رياض أطفال</option>
-                        <option value="primary" data-translate="stagePrimary">ابتدائية</option>
-                        <option value="middle" data-translate="stageMiddle">المتوسطة</option>
-                        <option value="secondary" data-translate="stageSecondary">الثانوية</option>
-                        <option value="university" data-translate="stageUniversity">الجامعة</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-tag" style="color:#e91e63"></i> <span data-translate="eduEventTypeLabel">نوع الحدث</span></label>
-                    <select id="inputEduEventType" class="form-input form-select-custom">
-                        <option value="graduation" data-translate="eventTypeGraduation">تخرج</option>
-                        <option value="award" data-translate="eventTypeAward">تكريم</option>
-                        <option value="competition" data-translate="eventTypeCompetition">مسابقة</option>
-                        <option value="exam" data-translate="eventTypeExam">اختبار</option>
-                        <option value="trip" data-translate="eventTypeTrip">رحلة</option>
-                        <option value="other" data-translate="eventTypeOther">أخرى</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-heading" style="color:#ff9800"></i> <span data-translate="eduTitleLabel">العنوان</span></label>
-                    <input type="text" id="inputEduTitle" class="form-input" placeholder="مثل: حفل تخرج الروضة، تكريم الطالب المثالي...">
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-align-left" style="color:#9c27b0"></i> <span data-translate="eduDetailsLabel">التفاصيل</span></label>
-                    <textarea id="inputEduDetails" class="form-input form-textarea" rows="3" placeholder="أضف تفاصيل الحدث التعليمي..."></textarea>
-                </div>
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label><i class="fas fa-calendar-alt" style="color:#1976d2"></i> <span data-translate="eduDateLabel">التاريخ</span></label>
-                        <input type="date" id="inputEduDate" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-clock" style="color:#00bcd4"></i> <span data-translate="eduTimeLabel">الوقت</span></label>
-                        <input type="time" id="inputEduTime" class="form-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-image" style="color:#4caf50"></i> <span data-translate="eduMainPhotoLabel">الصورة الرئيسية</span></label>
-                    <div class="file-upload-box">
-                        <input type="file" id="inputEduMainPhoto" class="file-input" accept="image/*">
-                        <label for="inputEduMainPhoto" class="file-drop-label">
-                            <i class="fas fa-camera"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-images" style="color:#ff5722"></i> <span data-translate="eduExtraPhotosLabel">صور إضافية</span></label>
-                    <div class="file-upload-box">
-                        <input type="file" id="inputEduExtraPhotos" class="file-input" accept="image/*" multiple>
-                        <label for="inputEduExtraPhotos" class="file-drop-label">
-                            <i class="fas fa-images"></i>
-                            <span class="file-drop-text" data-translate="certAddPhotos">أضف صور إضافية (يمكن أكثر من صورة)</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="collect-btn collect-btn-blue" style="flex:1;justify-content:center">
-                        <span class="collect-btn-text" data-translate="btnSaveEdu">حفظ الحدث</span>
-                        <span class="collect-btn-bubbles">
-                            <span class="collect-bubble cb-1"></span>
-                            <span class="collect-bubble cb-2"></span>
-                            <span class="collect-bubble cb-3"></span>
-                        </span>
-                    </button>
-                    <button type="button" class="btn-cancel" id="cancelEduBtn" data-translate="btnCancel">
-                        <i class="fas fa-times"></i> إلغاء
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Certificate Modal -->
-    <div class="cert-modal" id="certModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeCertModal"><i class="fas fa-times"></i></button>
-            <h2 class="modal-title" data-translate="certModalTitle">إضافة شهادة جديدة</h2>
-            <form id="certForm" class="profile-form">
-                <div class="form-group">
-                    <label><i class="fas fa-certificate" style="color:#9c27b0"></i> <span data-translate="certTitleLabel">عنوان الشهادة</span></label>
-                    <input type="text" id="inputCertTitle" class="form-input" data-translate-placeholder="certTitlePlaceholder" placeholder="مثل: شهادة تفوق، شهادة حفظ...">
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-align-left" style="color:#1976d2"></i> <span data-translate="certDetailsLabel">التفاصيل</span></label>
-                    <textarea id="inputCertDetails" class="form-input form-textarea" rows="3" data-translate-placeholder="certDetailsPlaceholder" placeholder="أضف تفاصيل الشهادة أو الإنجاز..."></textarea>
-                </div>
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label><i class="fas fa-calendar-alt" style="color:#e91e63"></i> <span data-translate="certDateLabel">التاريخ</span></label>
-                        <input type="date" id="inputCertDate" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-clock" style="color:#00bcd4"></i> <span data-translate="certTimeLabel">الوقت</span></label>
-                        <input type="time" id="inputCertTime" class="form-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-image" style="color:#ff9800"></i> <span data-translate="certThumbnailLabel">صورة الشهادة الرئيسية</span></label>
-                    <div class="file-upload-box" id="certThumbnailUploadBox">
-                        <input type="file" id="inputCertThumbnail" class="file-input" accept="image/*">
-                        <label for="inputCertThumbnail" class="file-drop-label">
-                            <i class="fas fa-camera"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                            <span class="file-selected-name" id="certThumbnailFileName"></span>
-                        </label>
-                    </div>
-                    <div class="cert-thumb-preview" id="certThumbnailPreview"></div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-images" style="color:#4caf50"></i> <span data-translate="certPhotosLabel">صور إضافية</span></label>
-                    <div class="file-upload-box" id="certPhotosUploadBox">
-                        <input type="file" id="inputCertPhotos" class="file-input" accept="image/*" multiple>
-                        <label for="inputCertPhotos" class="file-drop-label">
-                            <i class="fas fa-images"></i>
-                            <span class="file-drop-text" data-translate="certAddPhotos">أضف صور إضافية (يمكن أكثر من صورة)</span>
-                            <span class="file-selected-name" id="certPhotosFileName"></span>
-                        </label>
-                    </div>
-                    <div class="cert-photos-preview" id="certPhotosPreview"></div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="collect-btn collect-btn-purple" style="flex:1;justify-content:center">
-                        <span class="collect-btn-text" data-translate="btnSaveCert">حفظ الشهادة</span>
-                        <span class="collect-btn-bubbles">
-                            <span class="collect-bubble cb-1"></span>
-                            <span class="collect-bubble cb-2"></span>
-                            <span class="collect-bubble cb-3"></span>
-                        </span>
-                    </button>
-                    <button type="button" class="btn-cancel" id="cancelCertBtn" data-translate="btnCancel">
-                        <i class="fas fa-times"></i> إلغاء
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Information Modal -->
-    <div class="info-modal" id="infoModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeInfoModal"><i class="fas fa-times"></i></button>
-            <h2 class="modal-title" data-translate="infoModalTitle">إضافة معلومة جديدة</h2>
-            <form id="infoForm" class="profile-form">
-                <div class="form-group">
-                    <label><i class="fas fa-bookmark" style="color:#ff9800"></i> <span data-translate="infoEventTypeLabel">نوع الحدث</span></label>
-                    <select id="inputInfoEventType" class="form-input form-select-custom">
-                        <option value="milestone" data-translate="eventTypeMilestone">إنجاز شخصي</option>
-                        <option value="medical" data-translate="eventTypeMedical">طبي</option>
-                        <option value="social" data-translate="eventTypeSocial">اجتماعي</option>
-                        <option value="family" data-translate="eventTypeFamily">عائلي</option>
-                        <option value="other" data-translate="eventTypeOther">أخرى</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-child" style="color:#e91e63"></i> <span data-translate="infoAgeStageLabel">المرحلة العمرية</span></label>
-                    <input type="text" id="inputInfoAgeStage" class="form-input" data-translate-placeholder="infoAgeStagePlaceholder" placeholder="مثل: الطفولة المبكرة، سنة واحدة، 3 سنوات...">
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-heading" style="color:#1976d2"></i> <span data-translate="infoTitleLabel">العنوان</span></label>
-                    <input type="text" id="inputInfoTitle" class="form-input" data-translate-placeholder="infoTitlePlaceholder" placeholder="مثل: أول خطوات، زيارة الطبيب، عيد الميلاد...">
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-align-left" style="color:#9c27b0"></i> <span data-translate="infoDetailsLabel">التفاصيل</span></label>
-                    <textarea id="inputInfoDetails" class="form-input form-textarea" rows="3" data-translate-placeholder="infoDetailsPlaceholder" placeholder="أضف تفاصيل هذا الحدث المهم..."></textarea>
-                </div>
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label><i class="fas fa-calendar-alt" style="color:#00bcd4"></i> <span data-translate="infoDateLabel">التاريخ</span></label>
-                        <input type="date" id="inputInfoDate" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-clock" style="color:#4caf50"></i> <span data-translate="infoTimeLabel">الوقت</span></label>
-                        <input type="time" id="inputInfoTime" class="form-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-image" style="color:#ff5722"></i> <span data-translate="infoMainPhotoLabel">الصورة الرئيسية</span></label>
-                    <div class="file-upload-box" id="infoThumbnailUploadBox">
-                        <input type="file" id="inputInfoThumbnail" class="file-input" accept="image/*">
-                        <label for="inputInfoThumbnail" class="file-drop-label">
-                            <i class="fas fa-camera"></i>
-                            <span class="file-drop-text" data-translate="dragDropText">اختر صورة من جهازك</span>
-                            <span class="file-selected-name" id="infoThumbnailFileName"></span>
-                        </label>
-                    </div>
-                    <div class="info-thumb-preview" id="infoThumbnailPreview"></div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-images" style="color:#00bcd4"></i> <span data-translate="infoExtraPhotosLabel">الصور الإضافية</span></label>
-                    <div class="file-upload-box" id="infoPhotosUploadBox">
-                        <input type="file" id="inputInfoPhotos" class="file-input" accept="image/*" multiple>
-                        <label for="inputInfoPhotos" class="file-drop-label">
-                            <i class="fas fa-images"></i>
-                            <span class="file-drop-text" data-translate="infoAddPhotos">أضف صور إضافية (يمكن أكثر من صورة)</span>
-                            <span class="file-selected-name" id="infoPhotosFileName"></span>
-                        </label>
-                    </div>
-                    <div class="info-photos-preview" id="infoPhotosPreview"></div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="collect-btn collect-btn-orange" style="flex:1;justify-content:center">
-                        <span class="collect-btn-text" data-translate="btnSaveInfo">حفظ المعلومة</span>
-                        <span class="collect-btn-bubbles">
-                            <span class="collect-bubble cb-1"></span>
-                            <span class="collect-bubble cb-2"></span>
-                            <span class="collect-bubble cb-3"></span>
-                        </span>
-                    </button>
-                    <button type="button" class="btn-cancel" id="cancelInfoBtn" data-translate="btnCancel">
-                        <i class="fas fa-times"></i> إلغاء
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <!-- Cert Video Modal -->
     <div class="cert-video-modal" id="certVideoModal">
@@ -1565,6 +1350,8 @@
             <div class="book-carousel-counter">
                 <span id="bookCurrentIdx">1</span> / <span id="bookTotalIdx">9</span>
             </div>
+            <!-- Year Label -->
+            <div class="book-year-label" id="bookYearLabel">2019</div>
             <!-- Navigation -->
             <button class="book-nav book-nav-prev" id="bookPrev"><i class="fas fa-chevron-right"></i></button>
             <button class="book-nav book-nav-next" id="bookNext"><i class="fas fa-chevron-left"></i></button>
@@ -1574,8 +1361,13 @@
                     <img src="" alt="">
                 </div>
                 <div class="book-spine"></div>
-                <div class="book-page book-page-right" id="bookPageRight">
-                    <img src="" alt="">
+                <div class="book-page book-page-right book-info-page" id="bookPageRight">
+                    <div class="book-info-content" id="bookInfoContent">
+                        <div class="book-info-source" id="bookInfoSource"><i class="fas fa-baby"></i> الولادة</div>
+                        <h4 class="book-info-title" id="bookInfoTitle"></h4>
+                        <div class="book-info-date" id="bookInfoDate"></div>
+                        <div class="book-info-meta" id="bookInfoMeta"></div>
+                    </div>
                 </div>
                 <!-- Flipping page (animated) -->
                 <div class="book-page-flip" id="bookPageFlip">
@@ -1583,8 +1375,14 @@
                     <div class="book-flip-back"><img src="" alt=""></div>
                 </div>
             </div>
-            <!-- Thumbnails -->
-            <div class="book-carousel-thumbs" id="bookThumbs"></div>
+            <!-- Thumbnails Carousel -->
+            <div class="book-thumbs-carousel">
+                <button class="book-thumbs-nav book-thumbs-prev" id="bookThumbsPrev"><i class="fas fa-chevron-right"></i></button>
+                <div class="book-thumbs-viewport" id="bookThumbsViewport">
+                    <div class="book-carousel-thumbs" id="bookThumbs"></div>
+                </div>
+                <button class="book-thumbs-nav book-thumbs-next" id="bookThumbsNext"><i class="fas fa-chevron-left"></i></button>
+            </div>
         </div>
     </div>
 
@@ -1593,11 +1391,6 @@
     <script src="js/translation.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scrollAnimations.js"></script>
-    <script src="js/profileEditor.js"></script>
-    <script src="js/birthEditor.js"></script>
-    <script src="js/heightEditor.js"></script>
-    <script src="js/certificatesEditor.js"></script>
-    <script src="js/infoEditor.js"></script>
 
     <!-- Picture Frame Modal JS -->
     <script>
@@ -1857,6 +1650,101 @@
             document.addEventListener('keydown', function(e) { if (vm.classList.contains('active') && e.key === 'Escape') closeVideo(); });
         })();
 
+        // ===== Events Year Filter =====
+        (function() {
+            var filterBtns = document.querySelectorAll('.events-filter-btn');
+            var eventCards = document.querySelectorAll('.event-card[data-event-year]');
+            var noResults = document.getElementById('eventsNoResults');
+            filterBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(function(b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    var year = btn.dataset.year;
+                    var visible = 0;
+                    eventCards.forEach(function(card) {
+                        if (year === 'all' || card.dataset.eventYear === year) {
+                            card.classList.remove('hidden-by-filter');
+                            visible++;
+                        } else {
+                            card.classList.add('hidden-by-filter');
+                        }
+                    });
+                    if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+                });
+            });
+        })();
+
+        // ===== Events Media Buttons =====
+        document.addEventListener('click', function(e) {
+            var evtCard = e.target.closest('.event-card');
+            if (!evtCard) return;
+            // Details
+            if (e.target.closest('.evt-btn-details')) {
+                e.stopPropagation();
+                var title = evtCard.dataset.evtTitle || '';
+                var type = evtCard.dataset.evtType || '';
+                var badge = evtCard.dataset.evtBadge || '';
+                var stage = evtCard.dataset.evtStage || '';
+                var day = evtCard.dataset.evtDay || '';
+                var date = evtCard.dataset.evtDate || '';
+                var time = evtCard.dataset.evtTime || '';
+                var desc = evtCard.dataset.evtDesc || '';
+                var mainImg = '';
+                try { var ph = JSON.parse(evtCard.dataset.evtPhotos || '[]'); mainImg = ph[0] || ''; } catch(x) {}
+                var ip = document.getElementById('pictureFrameInfo');
+                var iTab = document.getElementById('frameInfoTab');
+                var iDate = document.getElementById('frameInfoDate');
+                var iStats = document.getElementById('frameInfoStats');
+                if (ip) {
+                    iTab.innerHTML = '<i class="fas fa-calendar-check"></i> ' + title + ' <span style="margin-right:8px;padding:2px 10px;border-radius:12px;font-size:0.75rem;color:#fff;background:var(--primary)">' + badge + '</span>';
+                    iDate.innerHTML = '<i class="fas fa-calendar-alt"></i> ' + day + ' ' + date + (time ? ' &nbsp;\u2022&nbsp; <i class="fas fa-clock"></i> ' + time : '') + '<br><i class="fas fa-child" style="margin-top:6px"></i> المرحلة: <strong>' + stage + '</strong> &nbsp;•&nbsp; نوع الحدث: <strong>' + type + '</strong>';
+                    iStats.innerHTML = '<div style="font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.8);">' + desc + '</div>';
+                    ip.style.display = 'block';
+                }
+                if (mainImg) openFrameModal(mainImg, title);
+                return;
+            }
+            // Photos
+            if (e.target.closest('.evt-btn-photos')) {
+                e.stopPropagation();
+                try { var photos = JSON.parse(evtCard.dataset.evtPhotos || '[]'); } catch(x2) { var photos = []; }
+                if (photos.length > 0) {
+                    var ip2 = document.getElementById('pictureFrameInfo');
+                    if (ip2) ip2.style.display = 'none';
+                    openFrameCarousel(photos, 0, evtCard.dataset.evtTitle || '');
+                }
+                return;
+            }
+            // Video
+            if (e.target.closest('.evt-btn-video')) {
+                e.stopPropagation();
+                var videoUrl = evtCard.dataset.evtVideo || '';
+                if (!videoUrl) return;
+                var vm = document.getElementById('certVideoModal');
+                var vp = document.getElementById('certVideoPlayer');
+                if (vm && vp) { vp.src = videoUrl; vm.classList.add('active'); document.body.style.overflow = 'hidden'; vp.play(); }
+                return;
+            }
+        });
+
+        // ===== Home "View All Events" link =====
+        (function() {
+            var viewAllBtn = document.getElementById('homeViewAllEvents');
+            if (viewAllBtn) {
+                viewAllBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var allLinks = document.querySelectorAll('.tab-link');
+                    var allPanels = document.querySelectorAll('.tab-panel');
+                    allLinks.forEach(function(l) { l.classList.remove('active'); });
+                    allPanels.forEach(function(p) { p.classList.remove('active'); });
+                    var evtLink = document.querySelector('.tab-link[href="#tab-info"]');
+                    var evtPanel = document.getElementById('tab-info');
+                    if (evtLink) evtLink.classList.add('active');
+                    if (evtPanel) { evtPanel.classList.add('active'); evtPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+                });
+            }
+        })();
+
         // ===== Education Stage Tabs =====
         (function() {
             var tabs = document.querySelectorAll('.edu-stage-tab');
@@ -1964,66 +1852,254 @@
         const counterCurr = document.getElementById('bookCurrentIdx');
         const counterTotal = document.getElementById('bookTotalIdx');
         const sidebarGrid = document.getElementById('sidebarPhotoGrid');
+        const yearLabel = document.getElementById('bookYearLabel');
+        const bookInfoSource = document.getElementById('bookInfoSource');
+        const bookInfoTitle = document.getElementById('bookInfoTitle');
+        const bookInfoDate = document.getElementById('bookInfoDate');
+        const bookInfoMeta = document.getElementById('bookInfoMeta');
+        const openLifeBookLink = document.getElementById('openLifeBook');
+        const thumbsViewport = document.getElementById('bookThumbsViewport');
+        const thumbsPrevBtn = document.getElementById('bookThumbsPrev');
+        const thumbsNextBtn = document.getElementById('bookThumbsNext');
+        const THUMBS_PER_PAGE = 10;
+        let thumbPage = 0;
 
-        let allImages = [];   // unique image URLs from the whole page
-        let images = [];      // current carousel set
+        /* Arabic month to sortable number */
+        const monthMap = {
+            '\u064a\u0646\u0627\u064a\u0631':'01','\u0641\u0628\u0631\u0627\u064a\u0631':'02','\u0645\u0627\u0631\u0633':'03','\u0623\u0628\u0631\u064a\u0644':'04',
+            '\u0645\u0627\u064a\u0648':'05','\u064a\u0648\u0646\u064a\u0648':'06','\u064a\u0648\u0644\u064a\u0648':'07','\u0623\u063a\u0633\u0637\u0633':'08',
+            '\u0633\u0628\u062a\u0645\u0628\u0631':'09','\u0623\u0643\u062a\u0648\u0628\u0631':'10','\u0646\u0648\u0641\u0645\u0628\u0631':'11','\u062f\u064a\u0633\u0645\u0628\u0631':'12'
+        };
+        function parseArabicDate(str) {
+            if (!str) return '9999-99-99';
+            // Try "15 مارس 2020" format
+            var m = str.match(/(\d{1,2})\s+(\S+)\s+(\d{4})/);
+            if (m) {
+                var mm = monthMap[m[2]] || '01';
+                return m[3] + '-' + mm + '-' + m[1].padStart(2,'0');
+            }
+            // Try "28/12/2023" format (dd/mm/yyyy)
+            var m2 = str.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+            if (m2) return m2[3] + '-' + m2[2].padStart(2,'0') + '-' + m2[1].padStart(2,'0');
+            // Try just year
+            var m3 = str.match(/(\d{4})/);
+            if (m3) return m3[1] + '-06-01';
+            return '9999-99-99';
+        }
+
+        let entries = [];     // {src, tab, tabIcon, tabColor, year, sortKey, title, dateDisplay, meta(html)}
         let currentIdx = 0;
         let isFlipping = false;
 
-        /* ---- Collect ALL unique images from every tab/section ---- */
-        function collectAllImages() {
-            const seen = new Set();
-            allImages = [];
-            const contentImgs = document.querySelectorAll(
-                '.height-section img, .cert-card-wrap img, ' +
-                '.edu-card-wrap img, .gallery-item img'
-            );
-            contentImgs.forEach(img => {
-                const src = img.src;
-                if (!src || src.endsWith('/') || seen.has(src)) return;
-                // Skip small icons
-                if (img.naturalWidth < 100 && img.complete) return;
-                seen.add(src);
-                allImages.push(src);
+        /* ---- Collect ALL entries from every tab/section ---- */
+        function collectAllEntries() {
+            entries = [];
+
+            /* -- Birth Tab -- */
+            var birthDate = '15 \u0645\u0627\u0631\u0633 2019';
+            var birthSortKey = parseArabicDate(birthDate);
+            var birthYear = '2019';
+            var birthMeta = '';
+            var birthInfoItems = document.querySelectorAll('.birth-info-item');
+            birthInfoItems.forEach(function(item) {
+                var label = item.querySelector('.birth-info-label');
+                var value = item.querySelector('.birth-info-value');
+                if (label && value) birthMeta += '<div class="meta-row"><i class="fas fa-circle" style="font-size:5px;color:#baa894;margin-top:7px"></i><span class="meta-label">' + label.textContent + ': </span><span class="meta-value">' + value.textContent + '</span></div>';
             });
-            return allImages;
+
+            // Footprint image
+            var footprintImg = document.querySelector('.birth-footprint-card img');
+            if (footprintImg && footprintImg.src) {
+                entries.push({
+                    src: footprintImg.src,
+                    tab: '\u0627\u0644\u0648\u0644\u0627\u062f\u0629', tabIcon: 'fas fa-baby', tabColor: '#e91e63',
+                    year: birthYear, sortKey: birthSortKey,
+                    title: '\u0628\u0635\u0645\u0629 \u0627\u0644\u0642\u062f\u0645',
+                    dateDisplay: birthDate,
+                    meta: birthMeta
+                });
+            }
+            // Birth photos
+            document.querySelectorAll('.birth-photos-grid img').forEach(function(img, i) {
+                if (!img.src) return;
+                entries.push({
+                    src: img.src,
+                    tab: '\u0627\u0644\u0648\u0644\u0627\u062f\u0629', tabIcon: 'fas fa-baby', tabColor: '#e91e63',
+                    year: birthYear, sortKey: birthSortKey + '-' + String(i).padStart(2,'0'),
+                    title: '\u0635\u0648\u0631 \u0627\u0644\u0648\u0644\u0627\u062f\u0629 (' + (i+1) + ')',
+                    dateDisplay: birthDate,
+                    meta: birthMeta
+                });
+            });
+
+            /* -- Height Tab -- */
+            document.querySelectorAll('.measurement-item').forEach(function(item) {
+                var dayName = (item.querySelector('.day-name') || {}).textContent || '';
+                var dayDateEl = item.querySelector('.day-date');
+                var dayDate = dayDateEl ? dayDateEl.textContent.replace(/^[\\s\\S]*?\\d/, function(m){return m;}) : '';
+                // Clean the date text (remove icon text)
+                dayDate = dayDate.replace(/[\u200f\u200e]/g, '').trim();
+                var dayTimeEl = item.querySelector('.day-time');
+                var dayTime = dayTimeEl ? dayTimeEl.textContent.replace(/[\u200f\u200e]/g, '').trim() : '';
+                var sortKey = parseArabicDate(dayDate);
+                var yearMatch = dayDate.match(/(\d{4})/);
+                var year = yearMatch ? yearMatch[1] : '2020';
+                
+                var hVal = '', wVal = '';
+                item.querySelectorAll('.measure-stat').forEach(function(st) {
+                    var v = (st.querySelector('.measure-stat-val') || {}).textContent || '';
+                    var u = (st.querySelector('.measure-stat-unit') || {}).textContent || '';
+                    if (u.includes('\u0633\u0645')) hVal = v + ' ' + u;
+                    if (u.includes('\u0643\u062c')) wVal = v + ' ' + u;
+                });
+                var meta = '<div class="meta-row"><i class="fas fa-ruler-vertical"></i><span class="meta-label">\u0627\u0644\u0637\u0648\u0644: </span><span class="meta-value">' + hVal + '</span></div>';
+                meta += '<div class="meta-row"><i class="fas fa-weight"></i><span class="meta-label">\u0627\u0644\u0648\u0632\u0646: </span><span class="meta-value">' + wVal + '</span></div>';
+
+                var img = item.querySelector('.measurement-photo');
+                if (img && img.src) {
+                    entries.push({
+                        src: img.src,
+                        tab: '\u0627\u0644\u0642\u064a\u0627\u0633\u0627\u062a', tabIcon: 'fas fa-ruler-vertical', tabColor: '#2196f3',
+                        year: year, sortKey: sortKey,
+                        title: '\u0642\u064a\u0627\u0633 ' + dayDate,
+                        dateDisplay: dayName + ' ' + dayDate,
+                        meta: meta
+                    });
+                }
+            });
+
+            /* -- Certificates Tab -- */
+            document.querySelectorAll('.cert-card-wrap').forEach(function(card) {
+                var d = card.dataset;
+                var certDate = d.certDate || '';
+                var sortKey = parseArabicDate(certDate);
+                var yearMatch = certDate.match(/(\d{4})/);
+                var year = yearMatch ? yearMatch[1] : '2024';
+                var meta = '<div class="meta-row"><i class="fas fa-map-marker-alt"></i><span class="meta-label">\u0627\u0644\u0645\u0643\u0627\u0646: </span><span class="meta-value">' + (d.certPlace || '') + '</span></div>';
+                meta += '<div class="meta-row"><i class="fas fa-award"></i><span class="meta-label">\u0627\u0644\u0646\u0648\u0639: </span><span class="meta-value">' + (d.certBadge || '') + '</span></div>';
+                if (d.certDetails) meta += '<div class="meta-row" style="margin-top:6px"><i class="fas fa-align-right"></i><span>' + d.certDetails + '</span></div>';
+
+                var mainImg = card.querySelector('.cert-main-img');
+                if (mainImg && mainImg.src) {
+                    entries.push({
+                        src: mainImg.src,
+                        tab: '\u0627\u0644\u0634\u0647\u0627\u062f\u0627\u062a', tabIcon: 'fas fa-certificate', tabColor: '#ff9800',
+                        year: year, sortKey: sortKey,
+                        title: d.certTitle || '',
+                        dateDisplay: (d.certDay || '') + ' ' + certDate,
+                        meta: meta
+                    });
+                }
+                // Additional cert photos from JSON
+                try {
+                    var photos = JSON.parse(d.certPhotos || '[]');
+                    photos.forEach(function(src, i) {
+                        if (src === (mainImg && mainImg.src)) return; // skip main
+                        entries.push({
+                            src: src,
+                            tab: '\u0627\u0644\u0634\u0647\u0627\u062f\u0627\u062a', tabIcon: 'fas fa-certificate', tabColor: '#ff9800',
+                            year: year, sortKey: sortKey + '-' + String(i).padStart(2,'0'),
+                            title: (d.certTitle || '') + ' (' + (i+2) + ')',
+                            dateDisplay: (d.certDay || '') + ' ' + certDate,
+                            meta: meta
+                        });
+                    });
+                } catch(e) {}
+            });
+
+            /* -- Education Tab -- */
+            document.querySelectorAll('.edu-event-item').forEach(function(evtItem) {
+                var d = evtItem.dataset;
+                var yearCard = evtItem.closest('.edu-year-card');
+                var yd = yearCard ? yearCard.dataset : {};
+                var evtDate = d.eventDate || '';
+                var sortKey = parseArabicDate(evtDate);
+                var yearMatch = evtDate.match(/(\d{4})/);
+                var year = yearMatch ? yearMatch[1] : '2024';
+                var meta = '<div class="meta-row"><i class="fas fa-school"></i><span class="meta-label">\u0627\u0644\u0645\u062f\u0631\u0633\u0629: </span><span class="meta-value">' + (yd.eduSchool || '') + '</span></div>';
+                meta += '<div class="meta-row"><i class="fas fa-calendar"></i><span class="meta-label">\u0627\u0644\u0633\u0646\u0629 \u0627\u0644\u062f\u0631\u0627\u0633\u064a\u0629: </span><span class="meta-value">' + (yd.eduDate || '') + '</span></div>';
+                meta += '<div class="meta-row"><i class="fas fa-star"></i><span class="meta-label">\u0627\u0644\u062a\u0642\u062f\u064a\u0631: </span><span class="meta-value">' + (yd.eduGrade || '') + '</span></div>';
+                if (d.eventDetails) meta += '<div class="meta-row" style="margin-top:6px"><i class="fas fa-align-right"></i><span>' + d.eventDetails + '</span></div>';
+
+                try {
+                    var photos = JSON.parse(d.eventPhotos || '[]');
+                    photos.forEach(function(src, i) {
+                        entries.push({
+                            src: src,
+                            tab: '\u0627\u0644\u062a\u0639\u0644\u064a\u0645', tabIcon: 'fas fa-graduation-cap', tabColor: '#4caf50',
+                            year: year, sortKey: sortKey + '-' + String(i).padStart(2,'0'),
+                            title: d.eventTitle || '',
+                            dateDisplay: evtDate,
+                            meta: meta
+                        });
+                    });
+                } catch(e) {}
+            });
+
+            /* -- Events Tab -- */
+            document.querySelectorAll('.event-card[data-event-year]').forEach(function(card) {
+                var d = card.dataset;
+                var evtDate = d.evtDate || '';
+                var sortKey = parseArabicDate(evtDate);
+                var year = d.eventYear || '';
+                var meta = '<div class="meta-row"><i class="fas fa-bookmark"></i><span class="meta-label">\u0646\u0648\u0639 \u0627\u0644\u062d\u062f\u062b: </span><span class="meta-value">' + (d.evtType || '') + '</span></div>';
+                meta += '<div class="meta-row"><i class="fas fa-child"></i><span class="meta-label">\u0627\u0644\u0645\u0631\u062d\u0644\u0629: </span><span class="meta-value">' + (d.evtStage || '') + '</span></div>';
+                if (d.evtBadge) meta += '<div class="meta-row"><i class="fas fa-tag"></i><span class="meta-label">\u0627\u0644\u062a\u0635\u0646\u064a\u0641: </span><span class="meta-value">' + d.evtBadge + '</span></div>';
+                if (d.evtDesc) meta += '<div class="meta-row" style="margin-top:6px"><i class="fas fa-align-right"></i><span>' + d.evtDesc + '</span></div>';
+
+                // Main thumbnail
+                var mainImg = card.querySelector('.event-card-thumbnail img');
+                if (mainImg && mainImg.src) {
+                    entries.push({
+                        src: mainImg.src,
+                        tab: '\u0627\u0644\u0623\u062d\u062f\u0627\u062b', tabIcon: 'fas fa-calendar-check', tabColor: '#9c27b0',
+                        year: year, sortKey: sortKey,
+                        title: d.evtTitle || '',
+                        dateDisplay: (d.evtDay || '') + ' ' + evtDate,
+                        meta: meta
+                    });
+                }
+                // Additional photos from JSON
+                try {
+                    var photos = JSON.parse(d.evtPhotos || '[]');
+                    photos.forEach(function(src, i) {
+                        if (mainImg && src.split('?')[0] === mainImg.src.split('?')[0]) return;
+                        entries.push({
+                            src: src,
+                            tab: '\u0627\u0644\u0623\u062d\u062f\u0627\u062b', tabIcon: 'fas fa-calendar-check', tabColor: '#9c27b0',
+                            year: year, sortKey: sortKey + '-' + String(i).padStart(2,'0'),
+                            title: (d.evtTitle || '') + ' (' + (i+2) + ')',
+                            dateDisplay: (d.evtDay || '') + ' ' + evtDate,
+                            meta: meta
+                        });
+                    });
+                } catch(e) {}
+            });
+
+            // Sort chronologically
+            entries.sort(function(a, b) { return a.sortKey.localeCompare(b.sortKey); });
+            return entries;
         }
 
-        /* ---- Collect images from a specific [data-image-group] container ---- */
-        function collectImagesFromGroup(groupContainer) {
-            const seen = new Set();
-            const groupImages = [];
-            if (!groupContainer) return groupImages;
-            
-            const imgs = groupContainer.querySelectorAll('img');
-            imgs.forEach(img => {
-                const src = img.src;
-                if (!src || src.endsWith('/') || seen.has(src)) return;
-                if (img.naturalWidth < 100 && img.complete) return;
-                seen.add(src);
-                groupImages.push(src);
-            });
-            return groupImages;
-        }
-
-        /* ---- Populate sidebar photo grid (last 10 images only) ---- */
+        /* ---- Populate sidebar photo grid ---- */
         function populateSidebar() {
             if (!sidebarGrid) return;
-            collectAllImages();
+            collectAllEntries();
             sidebarGrid.innerHTML = '';
-            
-            // Take only last 10 images
-            const recentImages = allImages.slice(-10);
-            
-            recentImages.forEach((src, i) => {
-                const div = document.createElement('div');
+            // Show up to 9 entries spread across time
+            var step = Math.max(1, Math.floor(entries.length / 9));
+            var shown = [];
+            for (var i = 0; i < entries.length && shown.length < 9; i += step) {
+                shown.push(entries[i]);
+            }
+            shown.forEach(function(entry, i) {
+                var div = document.createElement('div');
                 div.className = 'photo-item';
-                div.dataset.photoIdx = i;
-                div.dataset.sidebarImg = '1';  // mark as sidebar image
-                div.innerHTML = '<img src="' + src + '" alt="">';
-                div.addEventListener('click', () => {
-                    // Sidebar clicks show ALL images, not just recent 10
-                    openCarousel(allImages, allImages.indexOf(src));
+                div.innerHTML = '<img src="' + entry.src + '" alt="">';
+                div.style.cursor = 'pointer';
+                div.addEventListener('click', function() {
+                    var idx = entries.indexOf(entry);
+                    openCarousel(idx >= 0 ? idx : 0);
                 });
                 sidebarGrid.appendChild(div);
             });
@@ -2032,68 +2108,103 @@
         /* ---- Build thumbnail strip ---- */
         function buildThumbs() {
             thumbsWrap.innerHTML = '';
-            images.forEach((src, i) => {
-                const t = document.createElement('div');
+            entries.forEach(function(entry, i) {
+                var t = document.createElement('div');
                 t.className = 'book-thumb' + (i === currentIdx ? ' active' : '');
-                t.innerHTML = '<img src="' + src + '" alt="">';
-                t.addEventListener('click', () => goTo(i));
+                t.innerHTML = '<img src="' + entry.src + '" alt="">';
+                t.addEventListener('click', function() { goTo(i); });
                 thumbsWrap.appendChild(t);
+            });
+            scrollThumbsToIdx(currentIdx);
+        }
+
+        function scrollThumbsToIdx(idx) {
+            // Each thumb is 54px + 8px gap = 62px
+            var thumbSize = 62;
+            var vpWidth = thumbsViewport ? thumbsViewport.offsetWidth : 620;
+            var visibleCount = Math.floor(vpWidth / thumbSize) || THUMBS_PER_PAGE;
+            thumbPage = Math.floor(idx / visibleCount);
+            var offset = thumbPage * visibleCount * thumbSize;
+            thumbsWrap.style.transform = 'translateX(' + offset + 'px)';
+        }
+
+        if (thumbsPrevBtn) {
+            thumbsPrevBtn.addEventListener('click', function() {
+                var thumbSize = 62;
+                var vpWidth = thumbsViewport ? thumbsViewport.offsetWidth : 620;
+                var visibleCount = Math.floor(vpWidth / thumbSize) || THUMBS_PER_PAGE;
+                var maxPage = Math.ceil(entries.length / visibleCount) - 1;
+                thumbPage = Math.min(maxPage, thumbPage + 1);
+                thumbsWrap.style.transform = 'translateX(' + (thumbPage * visibleCount * thumbSize) + 'px)';
+            });
+        }
+        if (thumbsNextBtn) {
+            thumbsNextBtn.addEventListener('click', function() {
+                var thumbSize = 62;
+                var vpWidth = thumbsViewport ? thumbsViewport.offsetWidth : 620;
+                var visibleCount = Math.floor(vpWidth / thumbSize) || THUMBS_PER_PAGE;
+                thumbPage = Math.max(0, thumbPage - 1);
+                thumbsWrap.style.transform = 'translateX(' + (thumbPage * visibleCount * thumbSize) + 'px)';
             });
         }
 
         /* ---- Update book pages ---- */
         function updatePages() {
-            const pi = currentIdx;
-            pageLeft.querySelector('img').src = images[pi] || '';
-            pageLeft.classList.toggle('empty-page', !images[pi]);
+            var entry = entries[currentIdx];
+            if (!entry) return;
 
-            if (images[pi + 1]) {
-                pageRight.querySelector('img').src = images[pi + 1];
-                pageRight.querySelector('img').style.opacity = '1';
-                pageRight.classList.remove('empty-page');
-            } else {
-                pageRight.querySelector('img').src = '';
-                pageRight.querySelector('img').style.opacity = '0';
-                pageRight.classList.add('empty-page');
-            }
+            // Left page: image
+            pageLeft.querySelector('img').src = entry.src;
+            pageLeft.classList.remove('empty-page');
 
-            counterCurr.textContent = pi + 1;
-            counterTotal.textContent = images.length;
+            // Right page: info
+            bookInfoSource.innerHTML = '<i class="' + entry.tabIcon + '"></i> ' + entry.tab;
+            bookInfoSource.style.background = entry.tabColor;
+            bookInfoTitle.textContent = entry.title;
+            bookInfoDate.innerHTML = '<i class="fas fa-calendar-alt"></i> ' + entry.dateDisplay;
+            bookInfoMeta.innerHTML = entry.meta;
 
-            thumbsWrap.querySelectorAll('.book-thumb').forEach((t, i) => {
-                t.classList.toggle('active', i === pi || i === pi + 1);
+            // Year label
+            yearLabel.textContent = entry.year;
+
+            // Counter
+            counterCurr.textContent = currentIdx + 1;
+            counterTotal.textContent = entries.length;
+
+            // Thumbs active + auto-scroll to active thumb
+            thumbsWrap.querySelectorAll('.book-thumb').forEach(function(t, i) {
+                t.classList.toggle('active', i === currentIdx);
             });
+            scrollThumbsToIdx(currentIdx);
         }
 
         /* ---- Flip animation ---- */
         function flipTo(newIdx, direction) {
-            if (isFlipping || newIdx < 0 || newIdx >= images.length) return;
+            if (isFlipping || newIdx < 0 || newIdx >= entries.length || newIdx === currentIdx) return;
             isFlipping = true;
 
-            const oldLeft = images[currentIdx] || '';
-            const oldRight = images[currentIdx + 1] || '';
-            const newLeft = images[newIdx] || '';
-            const newRight = images[newIdx + 1] || '';
+            var oldImg = entries[currentIdx] ? entries[currentIdx].src : '';
+            var newImg = entries[newIdx] ? entries[newIdx].src : '';
 
             if (direction === 'next') {
                 pageFlip.className = 'book-page-flip flip-from-right';
                 pageFlip.style.display = 'block';
-                flipFront.querySelector('img').src = oldRight || oldLeft;
-                flipBack.querySelector('img').src = newLeft;
+                flipFront.querySelector('img').src = oldImg;
+                flipBack.querySelector('img').src = newImg;
                 flipFront.style.borderRadius = '0 8px 8px 0';
                 flipBack.style.borderRadius = '8px 0 0 8px';
-                requestAnimationFrame(() => pageFlip.classList.add('flipping'));
+                requestAnimationFrame(function() { pageFlip.classList.add('flipping'); });
             } else {
                 pageFlip.className = 'book-page-flip flip-from-left';
                 pageFlip.style.display = 'block';
-                flipFront.querySelector('img').src = oldLeft;
-                flipBack.querySelector('img').src = newRight || newLeft;
+                flipFront.querySelector('img').src = oldImg;
+                flipBack.querySelector('img').src = newImg;
                 flipFront.style.borderRadius = '8px 0 0 8px';
                 flipBack.style.borderRadius = '0 8px 8px 0';
-                requestAnimationFrame(() => pageFlip.classList.add('flipping'));
+                requestAnimationFrame(function() { pageFlip.classList.add('flipping'); });
             }
 
-            setTimeout(() => {
+            setTimeout(function() {
                 currentIdx = newIdx;
                 updatePages();
                 pageFlip.style.display = 'none';
@@ -2103,29 +2214,21 @@
         }
 
         function goNext() {
-            let next = currentIdx + 2;
-            if (next >= images.length) next = images.length - 1;
-            if (next === currentIdx) return;
-            flipTo(next, 'next');
+            if (currentIdx + 1 < entries.length) flipTo(currentIdx + 1, 'next');
         }
         function goPrev() {
-            let prev = currentIdx - 2;
-            if (prev < 0) prev = 0;
-            if (prev === currentIdx) return;
-            flipTo(prev, 'prev');
+            if (currentIdx - 1 >= 0) flipTo(currentIdx - 1, 'prev');
         }
         function goTo(idx) {
             if (idx === currentIdx || isFlipping) return;
             flipTo(idx, idx > currentIdx ? 'next' : 'prev');
         }
 
-        /* ---- Open carousel with a specific image set & starting index ---- */
-        function openCarousel(imgSet, startIdx) {
-            images = imgSet && imgSet.length ? imgSet : collectAllImages();
-            if (images.length === 0) return;
+        /* ---- Open carousel ---- */
+        function openCarousel(startIdx) {
+            if (entries.length === 0) collectAllEntries();
+            if (entries.length === 0) return;
             currentIdx = startIdx || 0;
-            // Ensure even start for pair display
-            if (currentIdx % 2 !== 0) currentIdx = Math.max(0, currentIdx - 1);
             buildThumbs();
             updatePages();
             pageFlip.style.display = 'none';
@@ -2153,71 +2256,22 @@
             if (e.key === 'ArrowRight') goPrev();
         });
 
-        /* ---- Make EVERY content image clickable (context-aware) ---- */
-        function makeImagesClickable() {
-            const selectors = [
-                '.height-section img',
-                '.cert-card-wrap img',
-                '.gallery-item img'
-            ];
-            document.querySelectorAll(selectors.join(', ')).forEach(img => {
-                if (img.dataset.carouselBound) return;
-                // Skip measurement images — they use the wood frame modal
-                if (img.closest('.measurement-image-wrap')) return;
-                // Skip birth photos — they use the wood frame carousel
-                if (img.closest('.birth-photos-grid')) return;
-                // Skip cert images — they use dedicated buttons
-                if (img.closest('.cert-card-wrap')) return;
-                // Skip summary cartoon icons & measurement cartoons — they are decorative
-                if (img.classList.contains('summary-cartoon') || img.classList.contains('measurement-cartoon')) return;
-                img.dataset.carouselBound = '1';
-                img.style.cursor = 'pointer';
-                img.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    const clickedSrc = this.src;
-                    
-                    // Find the closest [data-image-group] container
-                    const groupContainer = this.closest('[data-image-group]');
-                    
-                    let targetImages = [];
-                    let targetIdx = 0;
-                    
-                    if (groupContainer) {
-                        // Context-aware: collect only images from this group
-                        targetImages = collectImagesFromGroup(groupContainer);
-                        targetIdx = targetImages.indexOf(clickedSrc);
-                        
-                        // Fallback: try partial match by photo ID
-                        if (targetIdx === -1) {
-                            const baseId = clickedSrc.split('?')[0].split('/').pop();
-                            targetIdx = targetImages.findIndex(s => s.includes(baseId));
-                        }
-                        if (targetIdx === -1) targetIdx = 0;
-                    } else {
-                        // No group found, show all images
-                        targetImages = collectAllImages();
-                        targetIdx = targetImages.indexOf(clickedSrc);
-                        if (targetIdx === -1) targetIdx = 0;
-                    }
-                    
-                    if (targetImages.length > 0) {
-                        openCarousel(targetImages, targetIdx);
-                    }
-                });
+        // "عرض كتاب الحياة" link
+        if (openLifeBookLink) {
+            openLifeBookLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                collectAllEntries();
+                openCarousel(0);
             });
         }
 
         /* ---- Initialize ---- */
         populateSidebar();
-        makeImagesClickable();
 
         // Re-bind when tabs change
-        document.querySelectorAll('[data-tab]').forEach(tab => {
-            tab.addEventListener('click', () => {
-                setTimeout(() => {
-                    populateSidebar();
-                    makeImagesClickable();
-                }, 100);
+        document.querySelectorAll('[data-tab]').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                setTimeout(function() { populateSidebar(); }, 100);
             });
         });
     })();
@@ -2255,70 +2309,5 @@
     })();
     </script>
 
-    <!-- Gallery Drag & Drop -->
-    <script>
-    (function() {
-        const grid = document.getElementById('galleryGrid');
-        if (!grid) return;
-        let dragItem = null;
-
-        grid.addEventListener('dragstart', function(e) {
-            const item = e.target.closest('.gallery-item');
-            if (!item) return;
-            dragItem = item;
-            setTimeout(() => item.classList.add('dragging'), 0);
-            e.dataTransfer.effectAllowed = 'move';
-        });
-
-        grid.addEventListener('dragend', function(e) {
-            const item = e.target.closest('.gallery-item');
-            if (item) item.classList.remove('dragging');
-            grid.querySelectorAll('.gallery-item').forEach(i => i.classList.remove('drag-over'));
-            dragItem = null;
-        });
-
-        grid.addEventListener('dragover', function(e) {
-            e.preventDefault();
-            e.dataTransfer.dropEffect = 'move';
-            const target = e.target.closest('.gallery-item');
-            if (target && target !== dragItem) {
-                grid.querySelectorAll('.gallery-item').forEach(i => i.classList.remove('drag-over'));
-                target.classList.add('drag-over');
-            }
-        });
-
-        grid.addEventListener('dragleave', function(e) {
-            const target = e.target.closest('.gallery-item');
-            if (target) target.classList.remove('drag-over');
-        });
-
-        grid.addEventListener('drop', function(e) {
-            e.preventDefault();
-            const target = e.target.closest('.gallery-item');
-            if (!target || !dragItem || target === dragItem) return;
-            target.classList.remove('drag-over');
-            const items = [...grid.querySelectorAll('.gallery-item')];
-            const fromIdx = items.indexOf(dragItem);
-            const toIdx = items.indexOf(target);
-            if (fromIdx < toIdx) {
-                grid.insertBefore(dragItem, target.nextSibling);
-            } else {
-                grid.insertBefore(dragItem, target);
-            }
-        });
-
-        // Delete photo
-        grid.addEventListener('click', function(e) {
-            const btn = e.target.closest('.gallery-delete-btn');
-            if (!btn) return;
-            const item = btn.closest('.gallery-item');
-            if (item) {
-                item.style.transform = 'scale(0)';
-                item.style.opacity = '0';
-                setTimeout(() => item.remove(), 300);
-            }
-        });
-    })();
-    </script>
 </body>
 </html>
