@@ -7,20 +7,20 @@
     --gradient-start: #A855F7;
     --gradient-mid: #06B6D4;
     --gradient-end: #F472B6;
-    --bg-page: #0F0F1A;
-    --bg-white: #1A1A2E;
-    --text-dark: #E2E8F0;
-    --text-muted: #94A3B8;
-    --border: #2D2D44;
-    --border-soft: #1E1E32;
-    --bg-card: #1A1A2E;
+    --bg-page: #F5F2FF;
+    --bg-white: #FFFFFF;
+    --text-dark: #1A1033;
+    --text-muted: #6B7280;
+    --border: #E5E0F5;
+    --border-soft: #F0EBF8;
+    --bg-card: #FFFFFF;
     --neon-glow: rgba(168, 85, 247, 0.4);
     --neon-glow-strong: rgba(168, 85, 247, 0.6);
     --neon-cyan: #06B6D4;
     --neon-pink: #F472B6;
     --neon-green: #22C55E;
     --radius: 14px;
-    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 /* ===========================
@@ -32,12 +32,12 @@ body.theme-neon {
     --gradient-start: #A855F7;
     --gradient-mid: #06B6D4;
     --gradient-end: #F472B6;
-    --bg-page: #0F0F1A;
-    --bg-white: #1A1A2E;
-    --text-dark: #E2E8F0;
-    --text-muted: #94A3B8;
-    --border: #2D2D44;
-    --border-soft: #1E1E32;
+    --bg-page: #F5F2FF;
+    --bg-white: #FFFFFF;
+    --text-dark: #1A1033;
+    --text-muted: #6B7280;
+    --border: #E5E0F5;
+    --border-soft: #F0EBF8;
     --neon-glow: rgba(168, 85, 247, 0.4);
     --neon-glow-strong: rgba(168, 85, 247, 0.6);
     --neon-cyan: #06B6D4;
@@ -50,12 +50,12 @@ body.theme-electric {
     --gradient-start: #3B82F6;
     --gradient-mid: #60A5FA;
     --gradient-end: #22C55E;
-    --bg-page: #0A0E1A;
-    --bg-white: #111827;
-    --text-dark: #E2E8F0;
-    --text-muted: #94A3B8;
-    --border: #1E3A5F;
-    --border-soft: #152238;
+    --bg-page: #F0F5FF;
+    --bg-white: #FFFFFF;
+    --text-dark: #0A1033;
+    --text-muted: #5A7090;
+    --border: #C8DCF0;
+    --border-soft: #E8F0FA;
     --neon-glow: rgba(59, 130, 246, 0.4);
     --neon-glow-strong: rgba(59, 130, 246, 0.6);
     --neon-cyan: #60A5FA;
@@ -68,12 +68,12 @@ body.theme-creative {
     --gradient-start: #F97316;
     --gradient-mid: #A855F7;
     --gradient-end: #EC4899;
-    --bg-page: #1A0F0A;
-    --bg-white: #2E1A11;
-    --text-dark: #E2E8F0;
-    --text-muted: #D4A574;
-    --border: #44301E;
-    --border-soft: #321E14;
+    --bg-page: #FFF5EE;
+    --bg-white: #FFFFFF;
+    --text-dark: #2A1A0A;
+    --text-muted: #8A6A4A;
+    --border: #F0D8C5;
+    --border-soft: #FAF0E8;
     --neon-glow: rgba(249, 115, 22, 0.4);
     --neon-glow-strong: rgba(249, 115, 22, 0.6);
     --neon-cyan: #A855F7;
@@ -86,12 +86,12 @@ body.theme-cosmic {
     --gradient-start: #4C1D95;
     --gradient-mid: #7C3AED;
     --gradient-end: #22D3EE;
-    --bg-page: #0D0A1A;
-    --bg-white: #1A142E;
-    --text-dark: #E2E8F0;
-    --text-muted: #A78BFA;
-    --border: #2D1F5E;
-    --border-soft: #1A1040;
+    --bg-page: #F3F0FF;
+    --bg-white: #FFFFFF;
+    --text-dark: #0D0A2E;
+    --text-muted: #7060C0;
+    --border: #D0C5F0;
+    --border-soft: #EAE5FA;
     --neon-glow: rgba(139, 92, 246, 0.4);
     --neon-glow-strong: rgba(139, 92, 246, 0.6);
     --neon-cyan: #22D3EE;
@@ -122,7 +122,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.3), 0 0 20px var(--neon-glow);
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08), 0 0 20px var(--neon-glow);
 }
 
 .navbar-inner {
@@ -151,14 +151,14 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: var(--text-dark);
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.04);
     border: 1px solid var(--border);
     transition: all 0.3s;
     white-space: nowrap;
 }
 
 .nav-btn:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.07);
     color: var(--primary-light);
     border-color: var(--primary);
     box-shadow: 0 0 12px var(--neon-glow);
@@ -185,7 +185,7 @@ body {
     height: 32px;
     border-radius: 50%;
     border: 2px solid var(--border);
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.04);
     font-size: 0.75rem;
     font-weight: 700;
     cursor: pointer;
@@ -203,7 +203,7 @@ body {
 }
 
 .lang-btn-en {
-    background: rgba(255,255,255,0.08);
+    background: rgba(0,0,0,0.05);
 }
 
 /* Center: Color picker */
@@ -554,7 +554,7 @@ html[dir="ltr"] .cover-profile-text {
     background: var(--bg-white);
     border-bottom: 1px solid var(--border);
     padding: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
 }
 
 .stats-row {
@@ -708,7 +708,7 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
 .main-content {
     padding: 25px 0 40px;
     background-color: var(--bg-page);
-    --brick-color: rgba(168, 85, 247, 0.06);
+    --brick-color: rgba(168, 85, 247, 0.10);
     background-image:
         linear-gradient(to right, var(--brick-color) 1px, transparent 1px),
         linear-gradient(to bottom, var(--brick-color) 1px, transparent 1px),
@@ -725,13 +725,13 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
 
 /* Per-theme brick tint */
 body.theme-electric .main-content {
-    --brick-color: rgba(59, 130, 246, 0.06);
+    --brick-color: rgba(59, 130, 246, 0.10);
 }
 body.theme-creative .main-content {
-    --brick-color: rgba(249, 115, 22, 0.06);
+    --brick-color: rgba(249, 115, 22, 0.10);
 }
 body.theme-cosmic .main-content {
-    --brick-color: rgba(139, 92, 246, 0.06);
+    --brick-color: rgba(139, 92, 246, 0.10);
 }
 
 /* Tab panels */
@@ -767,7 +767,7 @@ body.theme-cosmic .main-content {
     background: var(--bg-white);
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     margin-bottom: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid var(--border);
@@ -775,7 +775,7 @@ body.theme-cosmic .main-content {
 
 .post-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.4), 0 0 20px var(--neon-glow);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12), 0 0 20px var(--neon-glow);
     border-color: var(--primary);
 }
 
@@ -970,7 +970,7 @@ html[dir="ltr"] .action-btn {
     background: var(--bg-white);
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     border: 1px solid var(--border);
 }
 
@@ -980,7 +980,7 @@ html[dir="ltr"] .action-btn {
     justify-content: space-between;
     padding: 16px 20px;
     border-bottom: 1px solid var(--border);
-    background: rgba(255,255,255,0.03);
+    background: rgba(0,0,0,0.02);
 }
 
 .sidebar-header h5 {

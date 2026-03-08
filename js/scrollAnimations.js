@@ -16,7 +16,7 @@
     const observerOptions = {
         root: null,
         rootMargin: '0px 0px -60px 0px',
-        threshold: 0.12
+        threshold: 0.005
     };
 
     function handleIntersect(entries, observer) {

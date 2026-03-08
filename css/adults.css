@@ -1,85 +1,85 @@
 /* ===========================
-   ROOT VARIABLES — Royal Gold (Default)
+   ROOT VARIABLES — Royal Gold Light (Default)
    =========================== */
 :root {
-  --primary: #d4af37;
-  --primary-light: #e8c84a;
-  --gradient-start: #111827;
-  --gradient-mid: #d4af37;
-  --gradient-end: #b8941f;
-  --bg-page: #020617;
-  --bg-white: #111827;
-  --bg-card: #111827;
-  --text-dark: #e2e8f0;
-  --text-muted: #94a3b8;
-  --border: rgba(212, 175, 55, 0.15);
-  --border-soft: rgba(212, 175, 55, 0.1);
+  --primary: #B8931A;
+  --primary-light: #D4AF37;
+  --gradient-start: #6B4C00;
+  --gradient-mid: #C8980E;
+  --gradient-end: #E8C84A;
+  --bg-page: #FAFAF5;
+  --bg-white: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --text-dark: #1A1510;
+  --text-muted: #6B6049;
+  --border: rgba(184, 147, 26, 0.2);
+  --border-soft: rgba(184, 147, 26, 0.12);
   --radius: 14px;
-  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-  --gold-glow: rgba(212, 175, 55, 0.4);
-  --gold-glow-strong: rgba(212, 175, 55, 0.6);
-  --accent: #6366f1;
-  --highlight: #f43f5e;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --gold-glow: rgba(184, 147, 26, 0.25);
+  --gold-glow-strong: rgba(184, 147, 26, 0.45);
+  --accent: #4F46E5;
+  --highlight: #E11D48;
 }
 
-/* Theme: Platinum Silver */
+/* Theme: Platinum Silver Light */
 .platinumSilver {
-  --primary: #c0c0c0;
-  --primary-light: #d4d4d4;
-  --gradient-start: #0f172a;
-  --gradient-mid: #c0c0c0;
-  --gradient-end: #a0a0a0;
-  --bg-page: #030712;
-  --bg-white: #0f172a;
-  --bg-card: #0f172a;
-  --text-dark: #e2e8f0;
-  --text-muted: #94a3b8;
-  --border: rgba(192, 192, 192, 0.15);
-  --border-soft: rgba(192, 192, 192, 0.1);
-  --gold-glow: rgba(192, 192, 192, 0.35);
-  --gold-glow-strong: rgba(192, 192, 192, 0.55);
-  --accent: #6366f1;
-  --highlight: #f43f5e;
+  --primary: #5A6882;
+  --primary-light: #7B8EA9;
+  --gradient-start: #2C3A55;
+  --gradient-mid: #5A6882;
+  --gradient-end: #A8B8CC;
+  --bg-page: #F5F7FA;
+  --bg-white: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --text-dark: #1A1D2E;
+  --text-muted: #5A6272;
+  --border: rgba(90, 104, 130, 0.2);
+  --border-soft: rgba(90, 104, 130, 0.12);
+  --gold-glow: rgba(90, 104, 130, 0.2);
+  --gold-glow-strong: rgba(90, 104, 130, 0.4);
+  --accent: #6366F1;
+  --highlight: #F43F5E;
 }
 
-/* Theme: Rose Gold */
+/* Theme: Rose Gold Light */
 .roseGold {
-  --primary: #b76e79;
-  --primary-light: #d4919b;
-  --gradient-start: #1a0a0f;
-  --gradient-mid: #b76e79;
-  --gradient-end: #9a5460;
-  --bg-page: #0a0408;
-  --bg-white: #1a0a0f;
-  --bg-card: #1a0a0f;
-  --text-dark: #f1e0e4;
-  --text-muted: #b89da3;
-  --border: rgba(183, 110, 121, 0.15);
-  --border-soft: rgba(183, 110, 121, 0.1);
-  --gold-glow: rgba(183, 110, 121, 0.35);
-  --gold-glow-strong: rgba(183, 110, 121, 0.55);
-  --accent: #6366f1;
-  --highlight: #f43f5e;
+  --primary: #B76E79;
+  --primary-light: #D4919B;
+  --gradient-start: #7C3043;
+  --gradient-mid: #B76E79;
+  --gradient-end: #E8B0B7;
+  --bg-page: #FDF6F7;
+  --bg-white: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --text-dark: #2C1018;
+  --text-muted: #8B5A62;
+  --border: rgba(183, 110, 121, 0.2);
+  --border-soft: rgba(183, 110, 121, 0.12);
+  --gold-glow: rgba(183, 110, 121, 0.25);
+  --gold-glow-strong: rgba(183, 110, 121, 0.45);
+  --accent: #6366F1;
+  --highlight: #F43F5E;
 }
 
-/* Theme: Indigo Night */
+/* Theme: Royal Indigo Light */
 .indigoNight {
-  --primary: #6366f1;
-  --primary-light: #818cf8;
-  --gradient-start: #020617;
-  --gradient-mid: #6366f1;
-  --gradient-end: #4f46e5;
-  --bg-page: #020617;
-  --bg-white: #0f0f2e;
-  --bg-card: #0f0f2e;
-  --text-dark: #e0e7ff;
-  --text-muted: #a5b4fc;
-  --border: rgba(99, 102, 241, 0.15);
-  --border-soft: rgba(99, 102, 241, 0.1);
-  --gold-glow: rgba(99, 102, 241, 0.35);
-  --gold-glow-strong: rgba(99, 102, 241, 0.55);
-  --accent: #d4af37;
-  --highlight: #f43f5e;
+  --primary: #4F46E5;
+  --primary-light: #6366F1;
+  --gradient-start: #2E2270;
+  --gradient-mid: #4F46E5;
+  --gradient-end: #A5B4FC;
+  --bg-page: #F5F6FF;
+  --bg-white: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --text-dark: #1A1B3E;
+  --text-muted: #4F5494;
+  --border: rgba(79, 70, 229, 0.2);
+  --border-soft: rgba(79, 70, 229, 0.12);
+  --gold-glow: rgba(79, 70, 229, 0.2);
+  --gold-glow-strong: rgba(79, 70, 229, 0.4);
+  --accent: #D4AF37;
+  --highlight: #F43F5E;
 }
 
 /* ===========================
@@ -110,7 +110,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 
 .navbar-inner {
@@ -139,7 +139,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: var(--text-dark);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.03);
   border: 1px solid var(--border);
   transition: all 0.2s;
   white-space: nowrap;
@@ -154,7 +154,8 @@ body {
 .nav-btn.active,
 .nav-btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: #000 !important;
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-color: var(--primary);
   box-shadow: 0 0 12px var(--gold-glow);
 }
@@ -173,7 +174,7 @@ body {
   height: 32px;
   border-radius: 50%;
   border: 2px solid var(--border);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.03);
   font-size: 0.75rem;
   font-weight: 700;
   cursor: pointer;
@@ -190,7 +191,7 @@ body {
 }
 
 .lang-btn-en {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 /* Center: Color picker */
@@ -579,7 +580,7 @@ html[dir="ltr"] .cover-profile-text {
   background: var(--bg-white);
   border-bottom: 1px solid var(--border);
   padding: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
 .stats-row {
@@ -1724,7 +1725,7 @@ img[data-carousel-bound="1"]:hover {
   flex-shrink: 0;
 }
 .book-info-meta .meta-label {
-  color: #d2b8a0;
+  color: #392c20;
   font-size: 0.72rem;
 }
 .book-info-meta .meta-value {
@@ -5732,7 +5733,7 @@ html[dir="ltr"] .measurement-note {
 
 /* ---- Main Content Background Pattern ---- */
 .main-content {
-  --grid-color: rgba(212, 175, 55, 0.06);
+  --grid-color: rgba(184, 147, 26, 0.12);
   background-color: transparent;
   background-image:
     linear-gradient(
@@ -5762,13 +5763,13 @@ html[dir="ltr"] .measurement-note {
   background-size: 55px 55px;
 }
 .platinumSilver .main-content {
-  --grid-color: rgba(192, 192, 192, 0.06);
+  --grid-color: rgba(90, 104, 130, 0.12);
 }
 .roseGold .main-content {
-  --grid-color: rgba(183, 110, 121, 0.06);
+  --grid-color: rgba(183, 110, 121, 0.12);
 }
 .indigoNight .main-content {
-  --grid-color: rgba(99, 102, 241, 0.06);
+  --grid-color: rgba(79, 70, 229, 0.12);
 }
 
 /* ---- Stat Item Hover ---- */
@@ -5868,10 +5869,10 @@ html[dir="ltr"] .measurement-note {
 
 /* ---- Book Carousel (Life Book) ---- */
 .book-page {
-  background: #1e293b;
+  background: #F7F2E8;
 }
 .book-info-page {
-  background: linear-gradient(170deg, #1e293b 0%, #0f172a 100%) !important;
+  background: linear-gradient(170deg, #FFFDF5 0%, #FEF9E8 100%) !important;
 }
 .book-info-title {
   color: var(--text-dark);
@@ -5884,13 +5885,13 @@ html[dir="ltr"] .measurement-note {
   color: var(--text-muted);
 }
 .book-page.empty-page {
-  background: #0f172a;
+  background: #EDE7D4;
 }
 .book-page.empty-page::before {
   background: repeating-linear-gradient(
     180deg,
-    rgba(212, 175, 55, 0.1) 0px,
-    rgba(212, 175, 55, 0.1) 1px,
+    rgba(184, 147, 26, 0.18) 0px,
+    rgba(184, 147, 26, 0.18) 1px,
     transparent 1px,
     transparent 20px
   );
@@ -5900,11 +5901,11 @@ html[dir="ltr"] .measurement-note {
 }
 .book-flip-front,
 .book-flip-back {
-  background: #1e293b;
+  background: #F7F2E8;
 }
 .frame-info-row {
-  background: var(--bg-white);
-  color: var(--text-dark);
+  color: var(--bg-white);
+  background: transparent;
 }
 
 /* ---- Modals — Dark Theme ---- */
@@ -6017,7 +6018,7 @@ html[dir="ltr"] .measurement-note {
   border-color: var(--border);
 }
 .birth-card:hover {
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
 }
 .birth-card-header {
   background: linear-gradient(
@@ -6112,7 +6113,7 @@ html[dir="ltr"] .birth-info-item:nth-child(odd) {
   border-color: var(--border);
 }
 .birth-photo-item {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ---- Certificates Section — Dark ---- */
@@ -6124,11 +6125,11 @@ html[dir="ltr"] .birth-info-item:nth-child(odd) {
   color: var(--primary);
 }
 .cert-card {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
   border-color: var(--border);
 }
 .cert-card:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.14);
 }
 .cert-thumbnail {
   background: linear-gradient(
@@ -6181,7 +6182,7 @@ html[dir="ltr"] .birth-info-item:nth-child(odd) {
 .edu-stage-header-card {
   background: var(--bg-card);
   border-color: var(--border);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 .edu-year-card {
   background: var(--bg-card);
@@ -6245,10 +6246,10 @@ html[dir="ltr"] .birth-info-item:nth-child(odd) {
 .event-card-inner {
   background: var(--bg-card);
   border-color: var(--border);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 .event-card-inner:hover {
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.13);
 }
 .event-card-thumbnail {
   background: linear-gradient(
@@ -6286,7 +6287,7 @@ html[dir="ltr"] .birth-info-item:nth-child(odd) {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 .summary-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.11);
 }
 .summary-card-pink::before {
   background: linear-gradient(90deg, var(--highlight), #e11d48);
@@ -6304,7 +6305,7 @@ html[dir="ltr"] .birth-info-item:nth-child(odd) {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 .measurement-card:hover {
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.11);
 }
 .measurement-day {
   background: linear-gradient(
@@ -6408,11 +6409,11 @@ html[dir="ltr"] .measurement-note {
 /* ---- Selection — Gold ---- */
 ::selection {
   background: var(--primary);
-  color: var(--bg-page);
+  color: #fff;
 }
 ::-moz-selection {
   background: var(--primary);
-  color: var(--bg-page);
+  color: #fff;
 }
 
 /* ---- Additional Dark Fixes ---- */
