@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-translate="pageTitle">صفحة الطفولة</title>
+    <title data-translate="pageTitle">مرحلة البلوغ</title>
     <!-- Bootstrap 5 RTL -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <!-- Font Awesome 6 -->
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adults.css">
 </head>
 <body>
 
@@ -23,18 +23,18 @@
             <div class="navbar-inner">
                 <!-- Right Side: Main nav buttons -->
                 <div class="nav-right">
-                    <button id="editProfileBtn" class="nav-btn nav-btn-primary active" data-translate="navEditProfile">
-                        <i class="fas fa-user-edit"></i> مرحلة الطفولة
+                    <a href="index.html" class="nav-btn">
+                        <i class="fas fa-child"></i> مرحلة الطفولة
+                    </a>
+                    <a href="teen.html" class="nav-btn">
+                        <i class="fas fa-bolt"></i> مرحلة المراهقة
+                    </a>
+                    <a href="#" class="nav-btn">
+                        <i class="fas fa-running"></i> مرحلة الشباب
+                    </a>
+                    <button id="editProfileBtn" class="nav-btn nav-btn-primary active">
+                        <i class="fas fa-crown"></i> مرحلة البلوغ
                     </button>
-                    <a href="#" class="nav-btn" data-translate="navAttendance">
-                        <i class="fas fa-shield-alt"></i> مرحلة المراهقة
-                    </a>
-                    <a href="#" class="nav-btn" data-translate="navSeller">
-                        <i class="fas fa-user"></i>مرحلة الشباب 
-                    </a>
-                    <a href="#" class="nav-btn" data-translate="navExpenses">
-                        <i class="fas fa-file-invoice-dollar"></i> مرحلة البلوغ
-                    </a>
                     <button class="lang-btn" id="langBtnAr" onclick="toggleLanguage()">ع</button>
                     <button class="lang-btn lang-btn-en" id="langBtnEn" onclick="toggleLanguage()">EN</button>
 
@@ -42,22 +42,16 @@
 
                 <!-- Center: Theme Picker -->
                 <div class="nav-center">
-                    <span class="color-label" data-translate="colorLabel">ثيمات الاطفال</span>
-                    <span class="color-dot active-dot" style="background:linear-gradient(135deg, #e74c3c 0%, #ff9800 50%, #ffb74d 100%);" data-theme="playfulRed" onclick="changeTheme(this)" title="Playful Red"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #1e88e5 0%, #42a5f5 50%, #90caf9 100%);" data-theme="oceanBlue" onclick="changeTheme(this)" title="Ocean Blue"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #43a047 0%, #66bb6a 50%, #a5d6a7 100%);" data-theme="forestGreen" onclick="changeTheme(this)" title="Forest Green"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #ff6f00 0%, #ff9800 50%, #ffcc80 100%);" data-theme="sunsetOrange" onclick="changeTheme(this)" title="Sunset Orange"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #7b1fa2 0%, #ab47bc 50%, #ce93d8 100%);" data-theme="purpleDreams" onclick="changeTheme(this)" title="Purple Dreams"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #ec407a 0%, #f48fb1 50%, #f8bbd0 100%);" data-theme="candyPink" onclick="changeTheme(this)" title="Candy Pink"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #039be5 0%, #4fc3f7 50%, #b3e5fc 100%);" data-theme="skyBlue" onclick="changeTheme(this)" title="Sky Blue"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #fbc02d 0%, #fdd835 50%, #fff59d 100%);" data-theme="sunshineYellow" onclick="changeTheme(this)" title="Sunshine Yellow"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #8e24aa 0%, #ba68c8 50%, #e1bee7 100%);" data-theme="berryPurple" onclick="changeTheme(this)" title="Berry Purple"></span>
-                    <span class="color-dot" style="background:linear-gradient(135deg, #26a69a 0%, #4db6ac 50%, #b2dfdb 100%);" data-theme="mintFresh" onclick="changeTheme(this)" title="Mint Fresh"></span>
+                    <span class="color-label">ثيمات البلوغ</span>
+                    <span class="color-dot active-dot" style="background:linear-gradient(135deg, #D4AF37 0%, #111827 100%);" data-theme="royalGold" onclick="changeAdultTheme(this)" title="Royal Gold"></span>
+                    <span class="color-dot" style="background:linear-gradient(135deg, #C0C0C0 0%, #0F172A 100%);" data-theme="platinumSilver" onclick="changeAdultTheme(this)" title="Platinum Silver"></span>
+                    <span class="color-dot" style="background:linear-gradient(135deg, #B76E79 0%, #1A0A0F 100%);" data-theme="roseGold" onclick="changeAdultTheme(this)" title="Rose Gold"></span>
+                    <span class="color-dot" style="background:linear-gradient(135deg, #6366F1 0%, #020617 100%);" data-theme="indigoNight" onclick="changeAdultTheme(this)" title="Indigo Night"></span>
                 </div>
 
                 <!-- Left Side: Info label -->
                 <div class="nav-left">
-                    <span class="info-label" data-translate="navInfoLabel">أطفل نقال - المختبف وتغنيمة 🎨</span>
+                    <span class="info-label">مرحلة البلوغ - النضج والتميز 👑</span>
                 </div>
             </div>
         </div>
@@ -70,17 +64,16 @@
             <!-- Rainbow arc decoration -->
         </div>
 
-        <!-- Kids Decoration — bottom-left (RTL) / bottom-right (LTR) -->
-        <div class="cover-kids-deco">
-            <div class="deco-rocket">
-                <i class="fas fa-rocket"></i>
-            </div>
-            <div class="deco-star deco-star-1"><i class="fas fa-star"></i></div>
-            <div class="deco-star deco-star-2"><i class="fas fa-star"></i></div>
-            <div class="deco-star deco-star-3"><i class="fas fa-star"></i></div>
-            <div class="deco-cloud deco-cloud-1"><i class="fas fa-cloud"></i></div>
-            <div class="deco-cloud deco-cloud-2"><i class="fas fa-cloud"></i></div>
-            <div class="deco-planet"><i class="fas fa-globe-americas"></i></div>
+        <!-- Adults Cover Decoration -->
+        <div class="cover-adult-deco">
+            <span class="deco-gold-crown"><i class="fas fa-crown"></i></span>
+            <span class="deco-gold-gem"><i class="fas fa-gem"></i></span>
+            <span class="deco-gold-star deco-gold-star-1"><i class="fas fa-star"></i></span>
+            <span class="deco-gold-star deco-gold-star-2"><i class="fas fa-star"></i></span>
+            <span class="deco-gold-star deco-gold-star-3"><i class="fas fa-star"></i></span>
+            <div class="deco-gold-ring deco-gold-ring-1"></div>
+            <div class="deco-gold-ring deco-gold-ring-2"></div>
+            <span class="deco-gold-feather"><i class="fas fa-feather-alt"></i></span>
         </div>
 
         <!-- Profile Info overlay at bottom-right of cover -->
@@ -90,9 +83,9 @@
                 <h1 class="cover-name" data-translate="profileName">محمد عبدالله</h1>
                 <p class="cover-bio" > و عمري 23 سنة </p>
                 <div class="cover-badges" id="coverBadges">
-                    <span class="cover-badge" data-translate="badgeChildhood">صدقة الطفولة</span>
+                    <span class="cover-badge">مرحلة البلوغ</span>
                 </div>
-                <p class="cover-bio" data-translate="profileBio">طفلي عزاز يحب الاستكشاف والتعليم</p>
+                <p class="cover-bio">النضج والحكمة في رحلة الحياة</p>
             </div>
             <div class="cover-avatar">
                 <div class="avatar-circle">
@@ -133,7 +126,7 @@
         <div class="container">
             <ul class="profile-tabs" id="profileTabs">
                 <li><a href="#tab-home" class="tab-link active" data-translate="tabHome"><i class="fas fa-home"></i> الرئيسية<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
-                <li><a href="#tab-birth" class="tab-link" data-translate="tabBirth"><i class="fas fa-baby-carriage"></i> الولادة<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
+                <li><a href="#tab-birth" class="tab-link" data-translate="tabBirth"><i class="fas fa-heart"></i> الولادة<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
                 <li><a href="#tab-height" class="tab-link" data-translate="tabHeight"><i class="fas fa-ruler-vertical"></i> الطول<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
                 <li><a href="#tab-certificates" class="tab-link" data-translate="tabCertificates"><i class="fas fa-certificate"></i> الشهادات<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
                 <li><a href="#tab-education" class="tab-link" data-translate="tabEducation"><i class="fas fa-graduation-cap"></i> التعليم<div class="tab-star tab-star-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div><div class="tab-star tab-star-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53"><path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.05,-407.78z"/></svg></div></a></li>
@@ -171,7 +164,7 @@
                                          data-evt-badge-class="evt-education"
                                          data-evt-stage="5 سنوات"
                                          data-evt-day="الأحد"
-                                         data-evt-date="2024-9-1"
+                                         data-evt-date="10-5-1999"
                                          data-evt-time="7:30 صباحاً"
                                          data-evt-desc="أول يوم لمحمد في الروضة الدولية. كان متحمساً ومتوتراً قليلاً لكنه سرعان ما تأقلم مع زملائه الجدد. بداية رائعة لمسيرته التعليمية."
                                          data-evt-photos='["https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&h=500&fit=crop"]'
@@ -190,7 +183,7 @@
                                                 <p class="event-card-desc">أول يوم لمحمد في الروضة. بداية رائعة لمسيرته التعليمية مع أصدقاء جدد.</p>
                                                 <div class="event-date-row">
                                                     <span class="event-day-name">الأحد</span>
-                                                    <span><i class="fas fa-calendar-alt"></i> 2024-9-1</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 2003-3-15</span>
                                                     <span><i class="fas fa-clock"></i> 7:30 صباحاً</span>
                                                 </div>
                                                 <div class="post-media-btns">
@@ -209,7 +202,7 @@
                                          data-evt-badge-class="evt-milestone"
                                          data-evt-stage="6 سنوات"
                                          data-evt-day="الخميس"
-                                         data-evt-date="2022-5-7 "
+                                         data-evt-date="10-5-1999"
                                          data-evt-time="6:00 مساءً"
                                          data-evt-desc="تخرج محمد من الروضة بتفوق وامتياز. حفل رائع بحضور الأهل والأصدقاء تضمن عروض مسرحية وأناشيد. لحظات فخر واعتزاز."
                                          data-evt-photos='["https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&h=500&fit=crop"]'
@@ -228,7 +221,7 @@
                                                 <p class="event-card-desc">تخرج بتفوق وامتياز. حفل رائع بحضور الأهل والأصدقاء.</p>
                                                 <div class="event-date-row">
                                                     <span class="event-day-name">الخميس</span>
-                                                    <span><i class="fas fa-calendar-alt"></i> 2025-7-1</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 2003-3-15</span>
                                                     <span><i class="fas fa-clock"></i> 6:00 مساءً</span>
                                                 </div>
                                                 <div class="post-media-btns">
@@ -248,7 +241,7 @@
                                          data-evt-badge-class="evt-education"
                                          data-evt-stage="6 سنوات"
                                          data-evt-day="الأحد"
-                                         data-evt-date="2022-5-7 "
+                                         data-evt-date="10-5-1999"
                                          data-evt-time="6:45 صباحاً"
                                          data-evt-desc="أول يوم لمحمد في المرحلة الابتدائية بمدرسة النخبة الأهلية. ارتدى الزي المدرسي بفخر وكان متحمساً للقاء معلمه الجديد وزملائه."
                                          data-evt-photos='["https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=500&fit=crop"]'
@@ -267,7 +260,7 @@
                                                 <p class="event-card-desc">أول يوم في الابتدائية. ارتدى الزي المدرسي بفخر ولقاء زملاء جدد.</p>
                                                 <div class="event-date-row">
                                                     <span class="event-day-name">الأحد</span>
-                                                    <span><i class="fas fa-calendar-alt"></i> 2025-7-1</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 2003-3-15</span>
                                                     <span><i class="fas fa-clock"></i> 6:45 صباحاً</span>
                                                 </div>
                                                 <div class="post-media-btns">
@@ -406,15 +399,15 @@
                         <!-- Height Tab -->
                         <div class="tab-panel" id="tab-height">
                             <div class="height-section" data-image-group="height">
-                                <!-- Header with cartoon ruler -->
+                                <!-- Header -->
                                 <div class="height-header">
                                     <div class="height-header-info">
                                         <div class="height-header-icon">
-                                            <img src="https://cdn-icons-png.flaticon.com/128/3468/3468377.png" alt="ruler" class="cartoon-icon">
+                                            <i class="fas fa-ruler-vertical" style="font-size:1.5rem;color:#D4AF37"></i>
                                         </div>
                                         <div>
                                             <h3 class="height-section-title" data-translate="heightTitle">سجل القياسات</h3>
-                                            <p class="height-section-sub" data-translate="heightSubtitle">تتبع نمو طفلك بمرور الوقت</p>
+                                            <p class="height-section-sub">تتبع النمو بمرور الوقت</p>
                                         </div>
                                     </div>
                                 </div>
@@ -422,21 +415,21 @@
                                 <!-- Summary Cards Row -->
                                 <div class="height-summary scroll-reveal">
                                     <div class="summary-card summary-card-pink">
-                                        <img src="https://cdn-icons-png.flaticon.com/128/3468/3468292.png" alt="" class="summary-cartoon">
+                                        <i class="fas fa-arrows-alt-v" style="font-size:1.8rem;color:#D4AF37"></i>
                                         <div class="summary-info">
                                             <span class="summary-label" data-translate="latestHeight">آخر طول</span>
                                             <span class="summary-value" id="latestHeightVal">110 سم</span>
                                         </div>
                                     </div>
                                     <div class="summary-card summary-card-blue">
-                                        <img src="https://cdn-icons-png.flaticon.com/128/3468/3468081.png" alt="" class="summary-cartoon">
+                                        <i class="fas fa-weight" style="font-size:1.8rem;color:#D4AF37"></i>
                                         <div class="summary-info">
                                             <span class="summary-label" data-translate="latestWidth">آخر وزن</span>
                                             <span class="summary-value" id="latestWeightVal">19 كج</span>
                                         </div>
                                     </div>
                                     <div class="summary-card summary-card-green">
-                                        <img src="https://cdn-icons-png.flaticon.com/128/2965/2965567.png" alt="" class="summary-cartoon">
+                                        <i class="fas fa-chart-line" style="font-size:1.8rem;color:#D4AF37"></i>
                                         <div class="summary-info">
                                             <span class="summary-label" data-translate="totalMeasurements">عدد القياسات</span>
                                             <span class="summary-value" id="totalMeasurementsVal">3</span>
@@ -460,7 +453,7 @@
                                                 </div>
                                             </div>
                                             <div class="measurement-body">
-                                                <img src="https://cdn-icons-png.flaticon.com/128/3468/3468292.png" alt="cartoon" class="measurement-cartoon">
+                                                <i class="fas fa-arrows-alt-v" style="font-size:1.5rem;color:#D4AF37;margin-left:8px"></i>
                                                 <div class="measurement-values">
                                                     <div class="measure-stat">
                                                         <div class="measure-stat-icon icon-height"><i class="fa-solid fa-arrow-up"></i></div>
@@ -485,14 +478,14 @@
                                         <div class="measurement-card">
                                             <div class="measurement-day">
                                                 <span class="day-name">الخميس</span>
-                                                <span class="day-date"><i class="fas fa-calendar-alt" style="margin-left:4px;font-size:0.7rem"></i> 2025-3-20</span>
+                                                <span class="day-date"><i class="fas fa-calendar-alt" style="margin-left:4px;font-size:0.7rem"></i> 2025-3-15</span>
                                                 <span class="day-time"><i class="fas fa-clock" style="margin-left:4px;font-size:0.7rem"></i> 9:00 صباحاً</span>
                                                 <div class="measurement-note" style="font-size:0.7rem;color:#888;margin-top:4px">
                                                     <i class="fas fa-edit" style="margin-left:4px;color:#aaa"></i> تم التسجيل: الثلاثاء 15-3-2025 – 11:00 صباحاً
                                                 </div>
                                             </div>
                                             <div class="measurement-body">
-                                                <img src="https://cdn-icons-png.flaticon.com/128/3468/3468081.png" alt="cartoon" class="measurement-cartoon">
+                                                <i class="fas fa-weight" style="font-size:1.5rem;color:#D4AF37;margin-left:8px"></i>
                                                 <div class="measurement-values">
                                                     <div class="measure-stat">
                                                         <div class="measure-stat-icon icon-height"><i class="fas fa-ruler-vertical"></i></div>
@@ -517,14 +510,14 @@
                                         <div class="measurement-card">
                                             <div class="measurement-day">
                                                 <span class="day-name">الجمعة</span>
-                                                <span class="day-date"><i class="fas fa-calendar-alt" style="margin-left:4px;font-size:0.7rem"></i> 2026-3-15</span>
+                                                <span class="day-date"><i class="fas fa-calendar-alt" style="margin-left:4px;font-size:0.7rem"></i> 2025-3-15</span>
                                                 <span class="day-time"><i class="fas fa-clock" style="margin-left:4px;font-size:0.7rem"></i> 4:00 مساءً</span>
                                                 <div class="measurement-note" style="font-size:0.7rem;color:#888;margin-top:4px">
                                                     <i class="fas fa-edit" style="margin-left:4px;color:#aaa"></i> تم التسجيل: الثلاثاء 15-3-2025 – 11:00 صباحاً
                                                 </div>
                                             </div>
                                             <div class="measurement-body">
-                                                <img src="https://cdn-icons-png.flaticon.com/128/3468/3468377.png" alt="cartoon" class="measurement-cartoon">
+                                                <i class="fas fa-ruler-vertical" style="font-size:1.5rem;color:#D4AF37;margin-left:8px"></i>
                                                 <div class="measurement-values">
                                                     <div class="measure-stat">
                                                         <div class="measure-stat-icon icon-height"><i class="fas fa-ruler-vertical"></i></div>
@@ -554,11 +547,11 @@
                                 <div class="certs-header">
                                     <div class="certs-header-info">
                                         <div class="certs-header-icon">
-                                            <img src="https://cdn-icons-png.flaticon.com/128/3468/3468294.png" alt="certificate" class="cartoon-icon">
+                                            <i class="fas fa-award" style="font-size:1.5rem;color:#D4AF37"></i>
                                         </div>
                                         <div>
                                             <h3 class="certs-section-title" data-translate="certsTitle">الشهادات والإنجازات</h3>
-                                            <p  class="mt-3 certs-section-sub" data-translate="certsSubtitle">وثّق إنجازات وشهادات طفلك</p>
+                                            <p  class="mt-3 certs-section-sub">وثّق إنجازاتك وشهاداتك</p>
                                         </div>
                                     </div>
                                 </div>
@@ -605,7 +598,7 @@
                                          data-cert-place="حلقات مسجد الراجحي - الرياض"
                                          data-cert-details="أتمّ محمد حفظ 10 أجزاء من القرآن الكريم بتقدير ممتاز. تم تكريمه من إمام المسجد بحضور والديه. إنجاز عظيم يستحق التوثيق والاحتفاء."
                                          data-cert-day="الجمعة"
-                                         data-cert-date="10-5-1999"
+                                         data-cert-date="10-5-2007"
                                          data-cert-time="بعد صلاة الجمعة"
                                          data-cert-badge="تكريم"
                                          data-cert-photos='["https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1585036156171-384164a8c6c4?w=800&h=500&fit=crop"]'
@@ -641,7 +634,7 @@
                                 <div class="edu-header">
                                     <div class="edu-header-info">
                                         <div class="edu-header-icon">
-                                            <img src="https://cdn-icons-png.flaticon.com/128/3468/3468254.png" alt="education" class="cartoon-icon">
+                                            <i class="fas fa-graduation-cap" style="font-size:1.5rem;color:#D4AF37"></i>
                                         </div>
                                         <div>
                                             <h3 class="edu-section-title">المراحل التعليمية</h3>
@@ -652,8 +645,8 @@
 
                                 <!-- Stage Tabs -->
                                 <div class="edu-stage-tabs">
-                                    <button class="edu-stage-tab active" data-stage="early"><i class="fas fa-baby"></i> الطفولة المبكرة</button>
-                                    <button class="edu-stage-tab" data-stage="primary"><i class="fas fa-school"></i> الابتدائية</button>
+                                    <button class="edu-stage-tab active" data-stage="early"><i class="fas fa-university"></i> الجامعة</button>
+                                    <button class="edu-stage-tab" data-stage="primary"><i class="fas fa-briefcase"></i> العمل</button>
                                 </div>
 
                                 <!-- ===== Stage: الطفولة المبكرة ===== -->
@@ -662,7 +655,7 @@
                                     <div class="edu-stage-header-card">
                                         <img src="https://cdn-icons-png.flaticon.com/128/2913/2913133.png" alt="" class="edu-stage-icon">
                                         <div>
-                                            <h4 class="edu-stage-name">الطفولة المبكرة</h4>
+                                            <h4 class="edu-stage-name">المرحلة الجامعية</h4>
                                             <p class="edu-stage-school">الروضة الدولية بالرياض</p>
                                             <span class="edu-stage-years"><i class="fas fa-calendar"></i> 2023 - 2025</span>
                                         </div>
@@ -702,7 +695,7 @@
                                                 <div class="edu-event-item" data-event-type="تكريم"
                                                      data-event-title="طفل الشهر"
                                                      data-event-details="اختاره المعلمون لأسلوبه الرائع في التعامل مع زملائه وحرصه على المشاركة في الأنشطة الصفية."
-                                                     data-event-date="2023-3-18"
+                                                     data-event-date="28-3-2052"
                                                      data-event-photos='["https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop"]'>
                                                     <span class="edu-event-dot" style="background:#ff9800;"></span>
                                                     <div class="edu-event-content">
@@ -710,9 +703,8 @@
                                                             <strong>طفل الشهر</strong>
                                                             <span class="edu-event-badge-mini" style="background:#fff3e0;color:#e65100;">تكريم</span>
                                                         </div>
-                                                        <p>اختاره المعلمون لأسلوبه الرائع</p>                 
-                                                        <span class="edu-event-date-small">الخميس</span>
-                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i>25-3-2003</span>
+                                                        <p>اختاره المعلمون لأسلوبه الرائع</p>
+                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i>2003-3-25</span>
                                                     </div>
                                                     <div class="post-media-btns">
                                                         <button class="media-btn media-btn-blue edu-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
@@ -732,8 +724,7 @@
                                                             <span class="edu-event-badge-mini" style="background:#ede7f6;color:#4a148c;">حفلة</span>
                                                         </div>
                                                         <p>احتفل أصدقاؤه بعيد ميلاده</p>
-                                                        <span class="edu-event-date-small">الخميس</span>
-                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i> 25-3-2003</span>
+                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i>2003-3-25</span>
                                                     </div>
                                                     <div class="post-media-btns">
                                                         <button class="media-btn media-btn-blue edu-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
@@ -787,9 +778,7 @@
                                                             <span class="edu-event-badge-mini" style="background:#e8f5e9;color:#1b5e20;">تخرج</span>
                                                         </div>
                                                         <p>تخرج بتفوق وامتياز من الروضة</p>
-                                                                                                                
-                                                        <span class="edu-event-date-small">الخميس</span>
-                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i> 25-3-2003</span>
+                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i>2003-3-25</span>
                                                     </div>
                                                     <div class="post-media-btns">
                                                         <button class="media-btn media-btn-blue edu-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
@@ -855,8 +844,7 @@
                                                             <span class="edu-event-badge-mini" style="background:#fff3e0;color:#e65100;">تكريم</span>
                                                         </div>
                                                         <p>تكريم كأفضل طالب في الصف</p>
-                                                        <span class="edu-event-date-small">الخميس</span>
-                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i> 25-3-2003</span>
+                                                        <span class="edu-event-date-small"><i class="fas fa-calendar-alt"></i>2003-3-25</span>
                                                     </div>
                                                     <div class="post-media-btns">
                                                         <button class="media-btn media-btn-blue edu-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
@@ -951,7 +939,7 @@
                                 <div class="events-header">
                                     <div class="events-header-info">
                                         <div class="events-header-icon">
-                                            <img src="https://cdn-icons-png.flaticon.com/128/3468/3468377.png"  alt="events" class="img-fluid cartoon-icon">
+                                            <i class="fas fa-calendar-check"></i>
                                         </div>
                                         <div>
                                             <h3 class="events-section-title">الأحداث</h3>
@@ -983,7 +971,7 @@
                                          data-evt-badge-class="evt-milestone"
                                          data-evt-stage="الطفولة المبكرة"
                                          data-evt-day="الأحد"
-                                         data-evt-date="2022-5-7 "
+                                         data-evt-date="15 مارس 2020"
                                          data-evt-time="3:30 مساءً"
                                          data-evt-desc="خطا محمد أولى خطواته بمفرده اليوم! كانت لحظة مذهلة ومؤثرة للعائلة بأكملها. بدأ بالمشي متمسكاً بالأثاث ثم تجرأ وخطا 5 خطوات بمفرده نحو والدته."
                                          data-evt-photos='["https://images.unsplash.com/photo-1519340333755-56e9c1d3611c?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=500&fit=crop"]'
@@ -1002,7 +990,7 @@
                                                 <p class="event-card-desc">خطا محمد أولى خطواته بمفرده اليوم! كانت لحظة مذهلة ومؤثرة للعائلة بأكملها.</p>
                                                 <div class="event-date-row">
                                                     <span class="event-day-name">الأحد</span>
-                                                    <span><i class="fas fa-calendar-alt"></i> 2020-3-15</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 2020-8-4</span>
                                                     <span><i class="fas fa-clock"></i> 3:30 مساءً</span>
                                                 </div>
                                                 <div class="post-media-btns">
@@ -1021,7 +1009,7 @@
                                          data-evt-badge-class="evt-medical"
                                          data-evt-stage="سنة واحدة"
                                          data-evt-day="الثلاثاء"
-                                         data-evt-date="2022-5-7 "
+                                         data-evt-date="5-3-2020"
                                          data-evt-time="10:00 صباحاً"
                                          data-evt-desc="أكمل محمد جميع التطعيمات الأساسية المقررة لعمر السنة الأولى. الطبيب أكد أن نموه طبيعي وصحته ممتازة. وزنه 10.5 كجم وطوله 76 سم."
                                          data-evt-photos='["https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=500&fit=crop"]'
@@ -1059,7 +1047,7 @@
                                          data-evt-badge-class="evt-social"
                                          data-evt-stage="3 سنوات"
                                          data-evt-day="السبت"
-                                         data-evt-date="2022-5-7 "
+                                         data-evt-date="5-3-2302"
                                          data-evt-time="5:00 مساءً"
                                          data-evt-desc="احتفال كبير بعيد ميلاد محمد الثالث مع العائلة والأصدقاء. حضر 25 طفلاً من روضة الأطفال. كعكة جميلة على شكل سيارة. محمد سعيد جداً!"
                                          data-evt-photos='["https://images.unsplash.com/photo-1530023367847-a683933f4172?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&h=500&fit=crop"]'
@@ -1090,73 +1078,36 @@
                                         </div>
                                     </div>
 
-                                    <!-- Event 4 -->
-                                    <div class="event-card scroll-reveal" data-event-year="2023"
-                                         data-evt-title="أول رحلة إلى البحر"
-                                         data-evt-type="رحلة"
-                                         data-evt-badge="عائلي"
-                                         data-evt-badge-class="evt-family"
-                                         data-evt-stage="4 سنوات"
-                                         data-evt-day="الخميس"
-                                         data-evt-date="2022-5-7 "
-                                         data-evt-time="طوال اليوم"
-                                         data-evt-desc="رحلة عائلية لا تُنسى إلى شاطئ البحر الأحمر. محمد رأى البحر للمرة الأولى وكان متحمساً جداً. لعب بالرمل، جمع الأصداف، وسبح مع والده. 3 أيام رائعة في جدة."
-                                         data-evt-photos='["https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=500&fit=crop"]'
-                                         data-evt-video="">
-                                        <div class="event-card-inner">
-                                            <span class="event-badge evt-family"><i class="fas fa-home"></i> عائلي</span>
-                                            <div class="event-card-thumbnail">
-                                                <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=600&h=300&fit=crop" alt="">
-                                            </div>
-                                            <div class="event-card-body">
-                                                <div class="event-meta-tags">
-                                                    <span class="event-meta-tag"><i class="fas fa-bookmark"></i> رحلة</span>
-                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 4 سنوات</span>
-                                                </div>
-                                                <h4 class="event-card-title">أول رحلة إلى البحر</h4>
-                                                <p class="event-card-desc">رحلة عائلية لا تُنسى إلى البحر الأحمر. لعب بالرمل وسبح مع والده.</p>
-                                                <div class="event-date-row">
-                                                    <span class="event-day-name">الخميس</span>
-                                                    <span><i class="fas fa-calendar-alt"></i> 2025-9-31 </span>
-                                                    <span><i class="fas fa-clock"></i> طوال اليوم</span>
-                                                </div>
-                                                <div class="post-media-btns">
-                                                    <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
-                                                    <button class="media-btn media-btn-green evt-btn-photos" title="الصور"><i class="fas fa-image"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <!-- Event 5 -->
-                                    <div class="event-card scroll-reveal" data-event-year="2024"
-                                         data-evt-title="أول يوم في الروضة"
+                                    <!-- Event 7 -->
+                                    <div class="event-card scroll-reveal" data-event-year="2026"
+                                         data-evt-title="أول يوم في المدرسة الابتدائية"
                                          data-evt-type="تعليم"
-                                         data-evt-badge="تعليم"
+                                         data-evt-badge="بداية جديدة"
                                          data-evt-badge-class="evt-education"
-                                         data-evt-stage="5 سنوات"
+                                         data-evt-stage="6 سنوات"
                                          data-evt-day="الأحد"
-                                         data-evt-date="2022-5-7 "
-                                         data-evt-time="7:30 صباحاً"
-                                         data-evt-desc="أول يوم لمحمد في الروضة الدولية. كان متحمساً ومتوتراً قليلاً لكنه سرعان ما تأقلم مع زملائه الجدد. بداية رائعة لمسيرته التعليمية."
-                                         data-evt-photos='["https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&h=500&fit=crop"]'
+                                         data-evt-date="7-9-2020"
+                                         data-evt-time="6:45 صباحاً"
+                                         data-evt-desc="أول يوم لمحمد في المرحلة الابتدائية بمدرسة النخبة الأهلية. ارتدى الزي المدرسي بفخر وكان متحمساً للقاء معلمه الجديد وزملائه."
+                                         data-evt-photos='["https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=500&fit=crop","https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=500&fit=crop"]'
                                          data-evt-video="">
                                         <div class="event-card-inner">
-                                            <span class="event-badge evt-education"><i class="fas fa-school"></i> تعليم</span>
+                                            <span class="event-badge evt-education"><i class="fas fa-school"></i> بداية جديدة</span>
                                             <div class="event-card-thumbnail">
-                                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=300&fit=crop" alt="">
+                                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=300&fit=crop" alt="">
                                             </div>
                                             <div class="event-card-body">
                                                 <div class="event-meta-tags">
                                                     <span class="event-meta-tag"><i class="fas fa-bookmark"></i> تعليم</span>
-                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 5 سنوات</span>
+                                                    <span class="event-meta-tag"><i class="fas fa-child"></i> 6 سنوات</span>
                                                 </div>
-                                                <h4 class="event-card-title">أول يوم في الروضة</h4>
-                                                <p class="event-card-desc">أول يوم لمحمد في الروضة. بداية رائعة لمسيرته التعليمية مع أصدقاء جدد.</p>
+                                                <h4 class="event-card-title">أول يوم في المدرسة الابتدائية</h4>
+                                                <p class="event-card-desc">أول يوم في الابتدائية. ارتدى الزي المدرسي بفخر ولقاء زملاء جدد.</p>
                                                 <div class="event-date-row">
                                                     <span class="event-day-name">الأحد</span>
-                                                    <span><i class="fas fa-calendar-alt"></i> 2024-9-1 </span>
-                                                    <span><i class="fas fa-clock"></i> 7:30 صباحاً</span>
+                                                    <span><i class="fas fa-calendar-alt"></i> 7 سبتمبر 2025</span>
+                                                    <span><i class="fas fa-clock"></i> 6:45 صباحاً</span>
                                                 </div>
                                                 <div class="post-media-btns">
                                                     <button class="media-btn media-btn-blue evt-btn-details" title="التفاصيل"><i class="fas fa-th"></i></button>
@@ -1243,8 +1194,7 @@
         </div>
     </section>
 
-    <!-- Bubble Container -->
-    <div class="bubble-container" id="bubbleContainer"></div>
+
 
     <!-- Cert Video Modal -->
     <div class="cert-video-modal" id="certVideoModal">
@@ -2244,6 +2194,72 @@
                     setTimeout(() => card.remove(), 300);
                 }
             });
+        });
+    })();
+    </script>
+
+    <!-- Adult Theme Switcher & Disable Kids Systems -->
+    <script>
+    /* Disable kid bubble system */
+    (function() {
+        if (typeof bubblesActive !== 'undefined') bubblesActive = false;
+        if (typeof bubbleInterval !== 'undefined') clearInterval(bubbleInterval);
+        var bc = document.getElementById('bubbleContainer');
+        if (bc) bc.remove();
+    })();
+
+    /* Adult theme switcher */
+    function changeAdultTheme(dot) {
+        var theme = dot.getAttribute('data-theme');
+        document.body.className = theme;
+        document.querySelectorAll('.color-dot').forEach(function(d) { d.classList.remove('active-dot'); });
+        dot.classList.add('active-dot');
+        localStorage.setItem('adultTheme', theme);
+    }
+    (function() {
+        var saved = localStorage.getItem('adultTheme');
+        if (saved) {
+            var dot = document.querySelector('[data-theme="' + saved + '"]');
+            if (dot) changeAdultTheme(dot);
+        }
+    })();
+    </script>
+
+    <!-- Cursor Light Effect -->
+    <script>
+    (function() {
+        var light = document.createElement('div');
+        light.id = 'cursorLight';
+        document.body.appendChild(light);
+
+        var style = document.createElement('style');
+        style.textContent = '#cursorLight{position:fixed;top:0;left:0;width:350px;height:350px;border-radius:50%;pointer-events:none;z-index:9998;opacity:0;transition:opacity 0.3s;background:radial-gradient(circle,rgba(212,175,55,0.08) 0%,rgba(212,175,55,0.04) 30%,transparent 70%);transform:translate(-50%,-50%);mix-blend-mode:screen;}';
+        document.head.appendChild(style);
+
+        function getThemeColor() {
+            var cls = document.body.className;
+            if (cls === 'platinumSilver') return 'rgba(192,192,192,';
+            if (cls === 'roseGold') return 'rgba(183,110,121,';
+            if (cls === 'indigoNight') return 'rgba(99,102,241,';
+            return 'rgba(212,175,55,';
+        }
+
+        function updateLightColor() {
+            var c = getThemeColor();
+            light.style.background = 'radial-gradient(circle,' + c + '0.08) 0%,' + c + '0.04) 30%,transparent 70%)';
+        }
+
+        var observer = new MutationObserver(updateLightColor);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        document.addEventListener('mousemove', function(e) {
+            light.style.left = e.clientX + 'px';
+            light.style.top = e.clientY + 'px';
+            light.style.opacity = '1';
+        });
+
+        document.addEventListener('mouseleave', function() {
+            light.style.opacity = '0';
         });
     })();
     </script>

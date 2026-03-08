@@ -1,21 +1,101 @@
 /* ===========================
-   ROOT VARIABLES
+   ROOT VARIABLES (Teen - Neon default)
    =========================== */
 :root {
-    --primary: #e74c3c;
-    --primary-light: #ff7043;
-    --gradient-start: #e65100;
-    --gradient-mid: #ff9800;
-    --gradient-end: #ffb74d;
-    --bg-page: #fff0ef;
-    --bg-white: #ffffff;
-    --text-dark: #2c3e50;
-    --text-muted: #7f8c8d;
-    --border: #f0e0de;
-    --border-soft: #f0e0de;
-    --bg-card: #ffffff;
+    --primary: #A855F7;
+    --primary-light: #C084FC;
+    --gradient-start: #A855F7;
+    --gradient-mid: #06B6D4;
+    --gradient-end: #F472B6;
+    --bg-page: #0F0F1A;
+    --bg-white: #1A1A2E;
+    --text-dark: #E2E8F0;
+    --text-muted: #94A3B8;
+    --border: #2D2D44;
+    --border-soft: #1E1E32;
+    --bg-card: #1A1A2E;
+    --neon-glow: rgba(168, 85, 247, 0.4);
+    --neon-glow-strong: rgba(168, 85, 247, 0.6);
+    --neon-cyan: #06B6D4;
+    --neon-pink: #F472B6;
+    --neon-green: #22C55E;
     --radius: 14px;
-    --shadow: 0 2px 12px rgba(0,0,0,0.07);
+    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+/* ===========================
+   TEEN THEMES
+   =========================== */
+body.theme-neon {
+    --primary: #A855F7;
+    --primary-light: #C084FC;
+    --gradient-start: #A855F7;
+    --gradient-mid: #06B6D4;
+    --gradient-end: #F472B6;
+    --bg-page: #0F0F1A;
+    --bg-white: #1A1A2E;
+    --text-dark: #E2E8F0;
+    --text-muted: #94A3B8;
+    --border: #2D2D44;
+    --border-soft: #1E1E32;
+    --neon-glow: rgba(168, 85, 247, 0.4);
+    --neon-glow-strong: rgba(168, 85, 247, 0.6);
+    --neon-cyan: #06B6D4;
+    --neon-pink: #F472B6;
+}
+
+body.theme-electric {
+    --primary: #3B82F6;
+    --primary-light: #60A5FA;
+    --gradient-start: #3B82F6;
+    --gradient-mid: #60A5FA;
+    --gradient-end: #22C55E;
+    --bg-page: #0A0E1A;
+    --bg-white: #111827;
+    --text-dark: #E2E8F0;
+    --text-muted: #94A3B8;
+    --border: #1E3A5F;
+    --border-soft: #152238;
+    --neon-glow: rgba(59, 130, 246, 0.4);
+    --neon-glow-strong: rgba(59, 130, 246, 0.6);
+    --neon-cyan: #60A5FA;
+    --neon-pink: #22C55E;
+}
+
+body.theme-creative {
+    --primary: #F97316;
+    --primary-light: #FB923C;
+    --gradient-start: #F97316;
+    --gradient-mid: #A855F7;
+    --gradient-end: #EC4899;
+    --bg-page: #1A0F0A;
+    --bg-white: #2E1A11;
+    --text-dark: #E2E8F0;
+    --text-muted: #D4A574;
+    --border: #44301E;
+    --border-soft: #321E14;
+    --neon-glow: rgba(249, 115, 22, 0.4);
+    --neon-glow-strong: rgba(249, 115, 22, 0.6);
+    --neon-cyan: #A855F7;
+    --neon-pink: #EC4899;
+}
+
+body.theme-cosmic {
+    --primary: #8B5CF6;
+    --primary-light: #A78BFA;
+    --gradient-start: #4C1D95;
+    --gradient-mid: #7C3AED;
+    --gradient-end: #22D3EE;
+    --bg-page: #0D0A1A;
+    --bg-white: #1A142E;
+    --text-dark: #E2E8F0;
+    --text-muted: #A78BFA;
+    --border: #2D1F5E;
+    --border-soft: #1A1040;
+    --neon-glow: rgba(139, 92, 246, 0.4);
+    --neon-glow-strong: rgba(139, 92, 246, 0.6);
+    --neon-cyan: #22D3EE;
+    --neon-pink: #7C3AED;
 }
 
 /* ===========================
@@ -37,12 +117,12 @@ body {
    =========================== */
 .top-navbar {
     background: var(--bg-white);
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
     padding: 8px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 8px rgba(0,0,0,0.3), 0 0 20px var(--neon-glow);
 }
 
 .navbar-inner {
@@ -71,21 +151,24 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: var(--text-dark);
-    background: #f5f5f5;
-    border: 1px solid #e0e0e0;
-    transition: all 0.2s;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    transition: all 0.3s;
     white-space: nowrap;
 }
 
 .nav-btn:hover {
-    background: #e8e8e8;
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.1);
+    color: var(--primary-light);
+    border-color: var(--primary);
+    box-shadow: 0 0 12px var(--neon-glow);
 }
 
 .nav-btn.active, .nav-btn-primary {
     background: var(--primary);
     color: #fff !important;
     border-color: var(--primary);
+    box-shadow: 0 0 15px var(--neon-glow), 0 0 30px var(--neon-glow);
 }
 
 .nav-btn-primary.active:hover {
@@ -101,25 +184,26 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 2px solid #e0e0e0;
-    background: #f5f5f5;
+    border: 2px solid var(--border);
+    background: rgba(255,255,255,0.05);
     font-size: 0.75rem;
     font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s;
+    transition: all 0.3s;
     color: var(--text-dark);
 }
 
 .lang-btn:hover {
     border-color: var(--primary);
     color: var(--primary);
+    box-shadow: 0 0 10px var(--neon-glow);
 }
 
 .lang-btn-en {
-    background: #eee;
+    background: rgba(255,255,255,0.08);
 }
 
 /* Center: Color picker */
@@ -149,12 +233,12 @@ body {
 
 .color-dot:hover {
     transform: scale(1.25);
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    box-shadow: 0 0 12px var(--neon-glow);
 }
 
 .color-dot.active-dot {
-    border-color: #333;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
+    border-color: #fff;
+    box-shadow: 0 0 0 2px var(--bg-page), 0 0 0 3px #fff, 0 0 15px var(--neon-glow);
 }
 
 /* Left side info label */
@@ -185,10 +269,10 @@ body {
 }
 .cover-gradient:hover {
     opacity: 0.95;
-    filter: brightness(1.05);
+    filter: brightness(1.1);
 }
 
-/* Rainbow arc decoration */
+/* Rainbow arc decoration - replaced with neon glow arc */
 .rainbow-arc {
     position: absolute;
     width: 300px;
@@ -198,141 +282,15 @@ body {
     transform: translateX(-50%);
     border-radius: 150px 150px 0 0;
     border: 12px solid transparent;
-    border-top-color: #ff0000;
+    border-top-color: var(--primary);
     box-shadow:
-        0 -6px 0 0 #ff0000,
-        0 -12px 0 0 #ff8800,
-        0 -18px 0 0 #ffff00,
-        0 -24px 0 0 #00cc00,
-        0 -30px 0 0 #0088ff,
-        0 -36px 0 0 #aa00ff;
-    opacity: 0.3;
-}
-
-/* ---- Kids Cover Decoration ---- */
-.cover-kids-deco {
-    position: absolute;
-    bottom: 10px;
-    left: 16px;
-    width: 180px;
-    height: 160px;
-    z-index: 5;
-    pointer-events: none;
-}
-
-html[dir="ltr"] .cover-kids-deco {
-    left: auto;
-    right: 16px;
-}
-
-/* Rocket */
-.deco-rocket {
-    position: absolute;
-    bottom: 18px;
-    left: 24px;
-    font-size: 2.4rem;
-    color: #fff;
-    filter: drop-shadow(0 2px 8px rgba(255,255,255,0.5));
-    transform: rotate(-35deg);
-    animation: rocketFloat 3s ease-in-out infinite;
-}
-html[dir="ltr"] .deco-rocket {
-    left: auto;
-    right: 24px;
-    transform: rotate(35deg) scaleX(-1);
-}
-.deco-rocket-trail {
-    position: absolute;
-    bottom: -12px;
-    left: 30%;
-    transform: translateX(-50%) rotate(35deg);
-    width: 6px;
-    height: 22px;
-    background: linear-gradient(to bottom, #ffa726, #ff7043, transparent);
-    border-radius: 4px;
-    opacity: 0.8;
-    animation: trailPulse 1.2s ease-in-out infinite alternate;
-}
-@keyframes rocketFloat {
-    0%, 100% { transform: rotate(-35deg) translateY(0); }
-    50% { transform: rotate(-35deg) translateY(-10px); }
-}
-html[dir="ltr"] .deco-rocket {
-    animation-name: rocketFloatLtr;
-}
-@keyframes rocketFloatLtr {
-    0%, 100% { transform: rotate(35deg) scaleX(-1) translateY(0); }
-    50% { transform: rotate(35deg) scaleX(-1) translateY(-10px); }
-}
-@keyframes trailPulse {
-    0% { opacity: 0.5; height: 18px; }
-    100% { opacity: 1; height: 26px; }
-}
-
-/* Stars */
-.deco-star {
-    position: absolute;
-    color: #fdd835;
-    filter: drop-shadow(0 0 4px rgba(253,216,53,0.6));
-    animation: starTwinkle 2s ease-in-out infinite alternate;
-}
-.deco-star-1 {
-    top: 10px;
-    left: 8px;
-    font-size: 0.7rem;
-    animation-delay: 0s;
-}
-.deco-star-2 {
-    top: 38px;
-    left: 60px;
-    font-size: 1rem;
-    animation-delay: 0.6s;
-}
-.deco-star-3 {
-    top: 6px;
-    left: 90px;
-    font-size: 0.55rem;
-    animation-delay: 1.2s;
-}
-@keyframes starTwinkle {
-    0% { opacity: 0.4; transform: scale(0.8) rotate(0deg); }
-    100% { opacity: 1; transform: scale(1.15) rotate(15deg); }
-}
-
-/* Clouds */
-.deco-cloud {
-    position: absolute;
-    color: rgba(255,255,255,0.35);
-}
-.deco-cloud-1 {
-    top: 50px;
-    left: 0;
-    font-size: 1.5rem;
-    animation: cloudDrift 6s ease-in-out infinite alternate;
-}
-.deco-cloud-2 {
-    top: 80px;
-    left: 55px;
-    font-size: 1rem;
-    animation: cloudDrift 5s ease-in-out infinite alternate-reverse;
-}
-@keyframes cloudDrift {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(12px); }
-}
-
-/* Planet */
-.deco-planet {
-    position: absolute;
-    bottom: 55px;
-    left: 100px;
-    font-size: 1.3rem;
-    color: rgba(255,255,255,0.45);
-    animation: planetSpin 12s linear infinite;
-}
-@keyframes planetSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+        0 -6px 0 0 var(--primary),
+        0 -12px 0 0 var(--neon-cyan),
+        0 -18px 0 0 var(--neon-pink),
+        0 -24px 0 0 var(--primary-light),
+        0 0 30px var(--neon-glow),
+        0 0 60px var(--neon-glow);
+    opacity: 0.5;
 }
 
 /* Edit cover button - positioned on cover, uses collect-btn for base style */
@@ -347,6 +305,148 @@ html[dir="ltr"] .deco-rocket {
 
 .edit-cover-btn:hover {
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* ---- Teen Neon Cover Decoration ---- */
+.cover-teen-deco {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    width: 200px;
+    height: 170px;
+    z-index: 5;
+    pointer-events: none;
+}
+html[dir="ltr"] .cover-teen-deco {
+    left: auto;
+    right: 16px;
+}
+
+/* Headphones — main piece */
+.deco-neon-headphones {
+    position: absolute;
+    bottom: 12px;
+    left: 30px;
+    font-size: 2.8rem;
+    color: #fff;
+    -webkit-text-stroke: 1px var(--primary);
+    filter: drop-shadow(0 0 10px var(--neon-glow-strong)) drop-shadow(0 0 24px var(--neon-glow));
+    animation: neonPulse 2.5s ease-in-out infinite alternate;
+}
+html[dir="ltr"] .deco-neon-headphones {
+    left: auto;
+    right: 30px;
+}
+
+/* Lightning bolt */
+.deco-neon-bolt {
+    position: absolute;
+    bottom: 65px;
+    left: 90px;
+    font-size: 1.5rem;
+    color: #fff;
+    -webkit-text-stroke: 1px var(--neon-cyan);
+    filter: drop-shadow(0 0 8px var(--neon-glow-strong)) drop-shadow(0 0 18px var(--neon-glow));
+    animation: boltFlicker 1.8s ease-in-out infinite;
+}
+html[dir="ltr"] .deco-neon-bolt {
+    left: auto;
+    right: 90px;
+}
+
+/* Music notes floating up */
+.deco-neon-note {
+    position: absolute;
+    color: #fff;
+    -webkit-text-stroke: 0.5px var(--neon-pink);
+    filter: drop-shadow(0 0 6px var(--neon-glow-strong)) drop-shadow(0 0 14px var(--neon-glow));
+    animation: noteFloat 3s ease-in-out infinite;
+}
+.deco-neon-note-1 {
+    bottom: 70px;
+    left: 10px;
+    font-size: 0.8rem;
+    animation-delay: 0s;
+}
+.deco-neon-note-2 {
+    bottom: 95px;
+    left: 50px;
+    font-size: 0.65rem;
+    animation-delay: 1s;
+}
+.deco-neon-note-3 {
+    bottom: 115px;
+    left: 25px;
+    font-size: 0.55rem;
+    animation-delay: 2s;
+}
+
+/* Gamepad */
+.deco-neon-gamepad {
+    position: absolute;
+    bottom: 8px;
+    left: 120px;
+    font-size: 1.4rem;
+    color: #fff;
+    -webkit-text-stroke: 1px var(--neon-green, #22C55E);
+    filter: drop-shadow(0 0 8px var(--neon-glow-strong)) drop-shadow(0 0 18px var(--neon-glow));
+    animation: neonPulse 3s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+html[dir="ltr"] .deco-neon-gamepad {
+    left: auto;
+    right: 120px;
+}
+
+/* Neon rings */
+.deco-neon-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid;
+    opacity: 0.35;
+}
+.deco-neon-ring-1 {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    left: 140px;
+    border-color: #fff;
+    box-shadow: 0 0 10px var(--neon-glow-strong), 0 0 24px var(--neon-glow), inset 0 0 10px var(--neon-glow-strong);
+    opacity: 0.55;
+    animation: ringExpand 3s ease-in-out infinite;
+}
+.deco-neon-ring-2 {
+    width: 24px;
+    height: 24px;
+    bottom: 100px;
+    left: 80px;
+    border-color: #fff;
+    box-shadow: 0 0 8px var(--neon-glow-strong), 0 0 20px var(--neon-glow), inset 0 0 8px var(--neon-glow-strong);
+    opacity: 0.55;
+    animation: ringExpand 2.5s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+/* Animations */
+@keyframes neonPulse {
+    0% { filter: drop-shadow(0 0 8px var(--neon-glow-strong)) drop-shadow(0 0 20px var(--neon-glow)); opacity: 0.85; }
+    100% { filter: drop-shadow(0 0 14px var(--neon-glow-strong)) drop-shadow(0 0 36px var(--neon-glow)); opacity: 1; }
+}
+@keyframes boltFlicker {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    15% { opacity: 0.3; transform: scale(0.95); }
+    20% { opacity: 1; transform: scale(1.05); }
+    50% { opacity: 0.9; }
+    75% { opacity: 0.4; transform: scale(0.97); }
+    80% { opacity: 1; transform: scale(1.02); }
+}
+@keyframes noteFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+    50% { transform: translateY(-14px) rotate(10deg); opacity: 1; }
+}
+@keyframes ringExpand {
+    0%, 100% { transform: scale(0.8); opacity: 0.35; }
+    50% { transform: scale(1.2); opacity: 0.7; }
 }
 
 /* Profile info overlay on cover */
@@ -385,13 +485,14 @@ html[dir="ltr"] .cover-profile-text {
 
 .cover-badge {
     display: inline-block;
-    background: #4caf50;
+    background: var(--primary);
     color: #fff;
     padding: 4px 18px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
     margin: 8px 0;
+    box-shadow: 0 0 12px var(--neon-glow);
 }
 
 .cover-bio {
@@ -410,18 +511,18 @@ html[dir="ltr"] .cover-profile-text {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
-    border: 5px solid #fff;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, var(--primary), var(--neon-cyan));
+    border: 4px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 25px var(--neon-glow), 0 0 50px var(--neon-glow);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s, background 0.4s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .avatar-circle:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 28px rgba(0,0,0,0.3);
+    box-shadow: 0 0 35px var(--neon-glow-strong), 0 0 70px var(--neon-glow);
 }
 
 .avatar-icon {
@@ -453,6 +554,7 @@ html[dir="ltr"] .cover-profile-text {
     background: var(--bg-white);
     border-bottom: 1px solid var(--border);
     padding: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .stats-row {
@@ -487,7 +589,7 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
 }
 
 .stat-item:hover {
-    background: #fef5f4;
+    background: rgba(168, 85, 247, 0.08);
 }
 
 .stat-num {
@@ -496,6 +598,7 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
     font-weight: 800;
     color: var(--primary);
     line-height: 1;
+    text-shadow: 0 0 10px var(--neon-glow);
 }
 
 .stat-lbl {
@@ -542,12 +645,13 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
 
 .tab-link:hover {
     color: var(--primary);
-    background: #fef5f4;
+    background: rgba(168, 85, 247, 0.08);
 }
 
 .tab-link.active {
     color: var(--primary);
     border-bottom-color: var(--primary);
+    text-shadow: 0 0 8px var(--neon-glow);
 }
 
 .tab-link i {
@@ -575,7 +679,7 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
 }
 
 .tab-star .fil0 {
-    fill: #ffd54f;
+    fill: var(--primary-light);
 }
 
 .tab-star-1 { width: 18px; height: 18px; top: 50%; left: 50%; }
@@ -588,7 +692,7 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
 .tab-link:hover .tab-star {
     opacity: 1;
     z-index: 2;
-    filter: drop-shadow(0 0 6px #ffd54f);
+    filter: drop-shadow(0 0 8px var(--neon-glow-strong));
 }
 
 .tab-link:hover .tab-star-1 { top: -70%; left: -15%; transition-duration: 0.9s; }
@@ -603,10 +707,31 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
    =========================== */
 .main-content {
     padding: 25px 0 40px;
-    background-image: url('../images/clouds-background.png');
-    background-repeat: repeat-x;
-    background-position: top center;
-    background-size: contain;
+    background-color: var(--bg-page);
+    --brick-color: rgba(168, 85, 247, 0.06);
+    background-image:
+        linear-gradient(to right, var(--brick-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--brick-color) 1px, transparent 1px),
+        linear-gradient(to right, var(--brick-color) 1px, transparent 1px);
+    background-size:
+        90px 50px,
+        90px 50px,
+        90px 50px;
+    background-position:
+        0 0,
+        0 0,
+        45px 25px;
+}
+
+/* Per-theme brick tint */
+body.theme-electric .main-content {
+    --brick-color: rgba(59, 130, 246, 0.06);
+}
+body.theme-creative .main-content {
+    --brick-color: rgba(249, 115, 22, 0.06);
+}
+body.theme-cosmic .main-content {
+    --brick-color: rgba(139, 92, 246, 0.06);
 }
 
 /* Tab panels */
@@ -642,15 +767,16 @@ html[dir="ltr"] .stat-item:not(:last-child)::after {
     background: var(--bg-white);
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     margin-bottom: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid rgba(0,0,0,0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--border);
 }
 
 .post-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4), 0 0 20px var(--neon-glow);
+    border-color: var(--primary);
 }
 
 /* Gradient area */
@@ -844,8 +970,8 @@ html[dir="ltr"] .action-btn {
     background: var(--bg-white);
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
 }
 
 .sidebar-header {
@@ -854,7 +980,7 @@ html[dir="ltr"] .action-btn {
     justify-content: space-between;
     padding: 16px 20px;
     border-bottom: 1px solid var(--border);
-    background: #fefefe;
+    background: rgba(255,255,255,0.03);
 }
 
 .sidebar-header h5 {
@@ -892,7 +1018,7 @@ html[dir="ltr"] .action-btn {
     align-items: center;
     gap: 14px;
     padding: 12px 0;
-    border-bottom: 1px solid #f5f0ef;
+    border-bottom: 1px solid var(--primary);
 }
 
 .info-row:last-child {
@@ -1967,6 +2093,17 @@ img[data-carousel-bound="1"]:hover {
         height: auto;
         overflow: visible;
     }
+    .cover-teen-deco {
+        transform: scale(0.6);
+        transform-origin: bottom left;
+        bottom: 5px;
+        left: 8px;
+    }
+    html[dir="ltr"] .cover-teen-deco {
+        transform-origin: bottom right;
+        left: auto;
+        right: 8px;
+    }
     .cover-profile-info {
         position: relative;
         bottom: auto;
@@ -2006,17 +2143,6 @@ img[data-carousel-bound="1"]:hover {
     .edit-cover-btn {
         font-size: 0.7rem;
         padding: 6px 12px;
-    }
-    .cover-kids-deco {
-        transform: scale(0.6);
-        transform-origin: bottom left;
-        bottom: 2px;
-        left: 4px;
-    }
-    html[dir="ltr"] .cover-kids-deco {
-        transform-origin: bottom right;
-        left: auto;
-        right: 4px;
     }
     .post-actions {
         flex-direction: column;
@@ -3130,7 +3256,6 @@ html[dir="ltr"] .birth-photo-delete {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 12px rgba(156, 39, 176, 0.15);
 }
 
 .certs-header-icon .cartoon-icon {
@@ -3185,14 +3310,15 @@ html[dir="ltr"] .birth-photo-delete {
     background: var(--bg-card);
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    border: 1px solid var(--border-soft);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cert-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 20px var(--neon-glow);
+    border-color: var(--primary);
 }
 
 /* Thumbnail */
@@ -3201,7 +3327,7 @@ html[dir="ltr"] .birth-photo-delete {
     height: 200px;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(135deg, #f5eef8 0%, #e8daef 50%, #d4b8e8 100%);
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3537,7 +3663,6 @@ html[dir="ltr"] .birth-photo-delete {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 12px rgba(33, 150, 243, 0.15);
 }
 
 .edu-header-icon .cartoon-icon {
@@ -3603,12 +3728,12 @@ html[dir="ltr"] .birth-photo-delete {
     display: flex;
     align-items: center;
     gap: 16px;
-    background: var(--bg-card, #fff);
+    background: var(--bg-card, #1A1A2E);
     border-radius: 16px;
     padding: 20px 24px;
     margin-bottom: 20px;
-    border: 1px solid var(--border-soft, #e0e0e0);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 .edu-stage-icon {
     width: 56px;
@@ -3637,15 +3762,15 @@ html[dir="ltr"] .birth-photo-delete {
 
 /* ===== Year Card (accordion) ===== */
 .edu-year-card {
-    background: var(--bg-card, #fff);
+    background: var(--bg-card, #1A1A2E);
     border-radius: 14px;
-    border: 1px solid var(--border-soft, #e0e0e0);
+    border: 1px solid var(--border);
     margin-bottom: 12px;
     overflow: hidden;
     transition: box-shadow 0.3s;
 }
 .edu-year-card:hover {
-    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.3), 0 0 15px var(--neon-glow);
 }
 
 /* Year Header */
@@ -3935,12 +4060,10 @@ html[dir="ltr"] .birth-photo-delete {
 .events-header-icon {
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, var(--primary), var(--gradient-mid));
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .events-section-title {
     font-size: 1.5rem;
@@ -4160,10 +4283,9 @@ html[dir="ltr"] .home-events-viewall i {
     align-items: center;
     gap: 12px;
     padding: 10px 14px;
-    background: linear-gradient(135deg, rgba(139,92,246,0.04), rgba(139,92,246,0.02));
     border-radius: 10px;
     margin-bottom: 12px;
-    border-right: 3px solid var(--primary);
+    background-color: transparent;
     font-size: 0.82rem;
     color: var(--text-muted);
 }
@@ -4575,7 +4697,6 @@ html[dir="ltr"] .collect-btn-bubbles {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);
 }
 
 .height-header-icon .cartoon-icon {
@@ -4862,9 +4983,8 @@ html[dir="ltr"] .day-time {
     font-style: italic;
     text-align: left;
     padding: 6px 12px;
-    background: #f9f8ff;
+    background: transparent;
     border-radius: 8px;
-    border-right: 3px solid #e0d6ff;
 }
 
 html[dir="ltr"] .measurement-note {
@@ -5334,4 +5454,556 @@ html[dir="ltr"] .measurement-note {
     17em 0 0 0.25em,
     18em 0 0 0.25em,
     19em 0 0 0.25em;
+}
+
+/* ===========================
+   NEON DARK OVERRIDES
+   Override all hardcoded light backgrounds, borders,
+   and colors to match the dark neon aesthetic
+   =========================== */
+
+/* Global light background overrides */
+.post-actions,
+.post-body,
+.post-header,
+.post-content,
+.cert-card-body,
+.cert-date-info,
+.edu-year-body,
+.sidebar-body,
+.events-filter,
+.events-list,
+.height-section,
+.certificates-section,
+.education-section,
+.events-section {
+    background: transparent;
+    color: var(--text-dark);
+}
+
+/* All hardcoded #fff, #fafafa, #f5f5f5 backgrounds */
+.photo-item,
+.frame-info-row,
+.summary-card,
+.events-filter-btn,
+.certs-header,
+.edu-header,
+.events-header,
+.height-header,
+.modal-content,
+.edu-stage-tab {
+    color: var(--text-dark);
+    border-color: var(--border);
+}
+
+/* Measurement card dark */
+.measurement-card {
+    background: var(--bg-white);
+    border-color: var(--border);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.measurement-card:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.4), 0 0 15px var(--neon-glow);
+}
+
+/* Measurement day banner */
+.measurement-day {
+    background: linear-gradient(135deg, rgba(168,85,247,0.1) 0%, rgba(168,85,247,0.03) 100%) !important;
+    border-bottom-color: var(--border);
+}
+
+/* Measure stat icons - neon glow */
+.measure-stat-icon.icon-height {
+    background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(168,85,247,0.35)) !important;
+    color: var(--primary-light) !important;
+}
+.measure-stat-icon.icon-width {
+    background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(6,182,212,0.35)) !important;
+    color: var(--neon-cyan) !important;
+}
+
+/* Summary cards neon */
+.summary-card-pink {
+    background: rgba(168,85,247,0.1) !important;
+    border: 1px solid rgba(168,85,247,0.3) !important;
+}
+.summary-card-blue {
+    background: rgba(6,182,212,0.1) !important;
+    border: 1px solid rgba(6,182,212,0.3) !important;
+}
+.summary-card-green {
+    background: rgba(34,197,94,0.1) !important;
+    border: 1px solid rgba(34,197,94,0.3) !important;
+}
+
+/* Height summary */
+.height-summary .summary-card {
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+/* Events filter buttons */
+.events-filter-btn {
+    background: var(--bg-white) !important;
+    color: var(--text-muted) !important;
+    border: 1px solid var(--border) !important;
+    transition: all 0.3s;
+}
+.events-filter-btn:hover,
+.events-filter-btn.active {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 12px var(--neon-glow);
+}
+
+/* Edu stage tabs */
+.edu-stage-tab {
+    transition: all 0.3s;
+}
+.edu-stage-tab.active {
+    background: var(--primary) !important;
+    color: #fff !important;
+    box-shadow: 0 0 15px var(--neon-glow);
+}
+
+/* Event cards dark */
+.event-card,
+.evt-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none;
+}
+.event-card-inner {
+    background: var(--bg-white) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.event-card-inner:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.4), 0 0 18px var(--neon-glow) !important;
+    border-color: var(--primary) !important;
+}
+.event-card-thumbnail {
+    background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(6,182,212,0.15)) !important;
+    border-radius: 0 !important;
+}
+.event-card-body {
+    background: var(--bg-white) !important;
+}
+
+/* Section header icons - dark neon overrides */
+.certs-header-icon {
+    background: transparent !important;
+    border: none !important;
+}
+
+.events-header-icon {
+
+    background : transparent;
+}
+.gallery-header-icon {
+    background: linear-gradient(135deg, rgba(76,175,80,0.2) 0%, rgba(76,175,80,0.35) 100%) !important;
+    box-shadow: 0 0 12px rgba(76,175,80,0.4) !important;
+}
+.height-header-icon {
+
+    border: none;
+    background :transparent;
+}
+
+/* Text colors */
+.post-title,
+.cert-title,
+.edu-section-title,
+.events-section-title,
+.certs-section-title,
+.height-section-title,
+.edu-stage-name,
+.edu-year-title,
+.day-name,
+.sidebar-header h5,
+.evt-card-title,
+.event-title {
+    color: var(--text-dark) !important;
+}
+
+.post-place,
+.cert-place,
+.cert-date,
+.cert-time,
+.cert-day-name,
+.day-date,
+.day-time,
+.edu-section-sub,
+.events-section-sub,
+.certs-section-sub,
+.height-section-sub,
+.measure-stat-unit,
+.evt-card-date,
+.event-date {
+    color: var(--text-muted) !important;
+}
+
+.measure-stat-val {
+    color: var(--text-dark) !important;
+    font-weight: 700;
+}
+
+/* Summary value neon glow */
+.summary-value {
+    color: var(--primary) !important;
+    text-shadow: 0 0 6px var(--neon-glow);
+}
+
+/* Cert badges neon */
+.cert-badge {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* View all links */
+.view-all-link {
+    color: var(--primary) !important;
+}
+.view-all-link:hover {
+    text-shadow: 0 0 8px var(--neon-glow);
+}
+
+/* Post media buttons - keep original colors + neon glow */
+.media-btn {
+    border: none !important;
+    color: #fff !important;
+    transition: all 0.3s;
+}
+.media-btn-red {
+    background: #ef5350 !important;
+    box-shadow: 0 0 10px rgba(239,83,80,0.4);
+}
+.media-btn-red:hover {
+    box-shadow: 0 0 18px rgba(239,83,80,0.7), 0 0 30px rgba(239,83,80,0.4);
+}
+.media-btn-blue {
+    background: #42a5f5 !important;
+    box-shadow: 0 0 10px rgba(66,165,245,0.4);
+}
+.media-btn-blue:hover {
+    box-shadow: 0 0 18px rgba(66,165,245,0.7), 0 0 30px rgba(66,165,245,0.4);
+}
+.media-btn-green {
+    background: #66bb6a !important;
+    box-shadow: 0 0 10px rgba(102,187,106,0.4);
+}
+.media-btn-green:hover {
+    box-shadow: 0 0 18px rgba(102,187,106,0.7), 0 0 30px rgba(102,187,106,0.4);
+}
+.media-btn-dark {
+    background: #546e7a !important;
+    box-shadow: 0 0 10px rgba(84,110,122,0.4);
+}
+.media-btn-dark:hover {
+    box-shadow: 0 0 18px rgba(84,110,122,0.7), 0 0 30px rgba(84,110,122,0.4);
+}
+.media-btn-orange {
+    background: #ffa726 !important;
+    box-shadow: 0 0 10px rgba(255,167,38,0.4);
+}
+.media-btn-orange:hover {
+    box-shadow: 0 0 18px rgba(255,167,38,0.7), 0 0 30px rgba(255,167,38,0.4);
+}
+
+/* Collect button neon */
+.collect-btn {
+    background: linear-gradient(135deg, var(--primary), var(--neon-cyan)) !important;
+    color: #fff !important;
+    box-shadow: 0 0 15px var(--neon-glow);
+    border: none !important;
+}
+.collect-btn:hover {
+    box-shadow: 0 0 25px var(--neon-glow-strong), 0 0 50px var(--neon-glow);
+}
+
+/* Photo grid items */
+.photo-item {
+    border: 1px solid var(--border) !important;
+    background-color: transparent;
+}
+.photo-item:hover {
+    box-shadow: 0 0 12px var(--neon-glow);
+    border-color: var(--primary) !important;
+}
+
+/* Modal / overlay dark */
+.cert-video-modal,
+.picture-frame-modal,
+.book-carousel-modal {
+    background: rgba(0,0,0,0.85);
+}
+
+.picture-frame-modal-container,
+.book-carousel-container {
+    background: var(--bg-white);
+}
+
+/* Keep gold/wood frame - only add subtle outer glow */
+.picture-frame-display {
+    box-shadow: 0 0 20px rgba(224,201,138,0.3), 0 0 40px rgba(0,0,0,0.4);
+}
+
+/* Liked button override */
+.action-btn-like.liked {
+    color: var(--neon-pink) !important;
+    background: rgba(244,114,182,0.1) !important;
+}
+
+/* Bubble toggle btn override for dark */
+.bubble-toggle-btn {
+    background: var(--bg-white) !important;
+    border-color: var(--border) !important;
+    color: var(--primary) !important;
+}
+
+/* Post action buttons */
+.action-btn-like:hover,
+.action-btn-comment:hover,
+.action-btn-share:hover {
+    background: rgba(168,85,247,0.1) !important;
+    color: var(--primary) !important;
+}
+
+/* Timeline dot neon glow */
+.edu-timeline-dot {
+    box-shadow: 0 0 8px var(--neon-glow);
+}
+
+/* Icon glow */
+.cartoon-icon,
+.summary-cartoon,
+.measurement-cartoon {
+    filter: drop-shadow(0 0 6px var(--neon-glow));
+}
+
+/* Selection color */
+::selection {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Scrollbar neon */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-page);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+    box-shadow: 0 0 6px var(--neon-glow);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light);
+}
+
+/* ===========================
+   BIRTH SECTION DARK OVERRIDES
+   =========================== */
+
+/* Birth card header - dark bg */
+.birth-card-header {
+    background: linear-gradient(135deg, rgba(168,85,247,0.08) 0%, rgba(6,182,212,0.05) 100%) !important;
+    border-bottom-color: var(--border) !important;
+}
+
+/* Birth card - dark border & neon hover */
+.birth-card {
+    border-color: var(--border) !important;
+}
+.birth-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4), 0 0 12px var(--neon-glow) !important;
+}
+
+/* Birth info items - dark borders & hover */
+.birth-info-item {
+    border-bottom-color: var(--border) !important;
+}
+.birth-info-item:hover {
+    background: rgba(168,85,247,0.06) !important;
+}
+.birth-info-item:nth-child(odd) {
+    border-left-color: var(--border) !important;
+}
+html[dir="ltr"] .birth-info-item:nth-child(odd) {
+    border-right-color: var(--border) !important;
+}
+
+/* Birth info icons - dark semi-transparent backgrounds keeping original icon colors */
+.birth-info-icon {
+    background: linear-gradient(135deg, rgba(25,118,210,0.15) 0%, rgba(25,118,210,0.25) 100%) !important;
+    box-shadow: 0 0 8px rgba(25,118,210,0.3);
+}
+.birth-info-icon.birth-icon-pink {
+    background: linear-gradient(135deg, rgba(233,30,99,0.15) 0%, rgba(233,30,99,0.25) 100%) !important;
+    box-shadow: 0 0 8px rgba(233,30,99,0.3);
+}
+.birth-info-icon.birth-icon-pink i { color: #f06292 !important; }
+
+.birth-info-icon.birth-icon-purple {
+    background: linear-gradient(135deg, rgba(156,39,176,0.15) 0%, rgba(156,39,176,0.25) 100%) !important;
+    box-shadow: 0 0 8px rgba(156,39,176,0.3);
+}
+.birth-info-icon.birth-icon-purple i { color: #ce93d8 !important; }
+
+.birth-info-icon.birth-icon-blue {
+    background: linear-gradient(135deg, rgba(25,118,210,0.15) 0%, rgba(25,118,210,0.25) 100%) !important;
+    box-shadow: 0 0 8px rgba(25,118,210,0.3);
+}
+.birth-info-icon.birth-icon-blue i { color: #64b5f6 !important; }
+
+.birth-info-icon.birth-icon-green {
+    background: linear-gradient(135deg, rgba(56,142,60,0.15) 0%, rgba(56,142,60,0.25) 100%) !important;
+    box-shadow: 0 0 8px rgba(56,142,60,0.3);
+}
+.birth-info-icon.birth-icon-green i { color: #81c784 !important; }
+
+.birth-info-icon.birth-icon-orange {
+    background: linear-gradient(135deg, rgba(245,124,0,0.15) 0%, rgba(245,124,0,0.25) 100%) !important;
+    box-shadow: 0 0 8px rgba(245,124,0,0.3);
+}
+.birth-info-icon.birth-icon-orange i { color: #ffb74d !important; }
+
+.birth-info-icon i {
+    color: #64b5f6 !important;
+}
+
+/* Footprint image - dark border */
+.footprint-image {
+    border-color: var(--border) !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3), 0 0 10px var(--neon-glow);
+}
+
+/* Footprint delete btn - keep red but darker border */
+.footprint-delete {
+    border-color: var(--bg-white) !important;
+}
+
+/* Birth photo items */
+.birth-photo-item {
+    border-color: var(--border) !important;
+}
+.birth-photo-item:hover {
+    box-shadow: 0 0 12px var(--neon-glow);
+}
+
+/* ===========================
+   NEON GEOMETRIC SHAPES
+   Floating shapes from the bottom that fade away
+   =========================== */
+
+.neon-shapes-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.neon-shape {
+    position: absolute;
+    bottom: -60px;
+    pointer-events: none;
+    opacity: 0;
+    animation: neonShapeFloat var(--duration, 3s) var(--delay, 0s) ease-out forwards;
+}
+
+/* Triangle shape */
+.neon-shape-triangle {
+    width: 0;
+    height: 0;
+    border-left: var(--size, 12px) solid transparent;
+    border-right: var(--size, 12px) solid transparent;
+    border-bottom: calc(var(--size, 12px) * 1.7) solid var(--shape-color, #A855F7);
+    filter: drop-shadow(0 0 6px var(--shape-color, #A855F7)) drop-shadow(0 0 12px var(--shape-color, #A855F7));
+}
+
+/* Square shape */
+.neon-shape-square {
+    width: calc(var(--size, 12px) * 1.4);
+    height: calc(var(--size, 12px) * 1.4);
+    border: 2px solid var(--shape-color, #06B6D4);
+    background: transparent;
+    box-shadow: 0 0 6px var(--shape-color, #06B6D4), 0 0 12px var(--shape-color, #06B6D4), inset 0 0 6px var(--shape-color, #06B6D4);
+}
+
+/* Diamond shape (rotated square) */
+.neon-shape-diamond {
+    width: calc(var(--size, 12px) * 1.2);
+    height: calc(var(--size, 12px) * 1.2);
+    border: 2px solid var(--shape-color, #F472B6);
+    background: transparent;
+    transform: rotate(45deg);
+    box-shadow: 0 0 6px var(--shape-color, #F472B6), 0 0 12px var(--shape-color, #F472B6), inset 0 0 6px var(--shape-color, #F472B6);
+}
+
+/* Circle outline shape */
+.neon-shape-circle {
+    width: calc(var(--size, 12px) * 1.4);
+    height: calc(var(--size, 12px) * 1.4);
+    border-radius: 50%;
+    border: 2px solid var(--shape-color, #22D3EE);
+    background: transparent;
+    box-shadow: 0 0 6px var(--shape-color, #22D3EE), 0 0 12px var(--shape-color, #22D3EE), inset 0 0 6px var(--shape-color, #22D3EE);
+}
+
+/* Cross / plus shape */
+.neon-shape-cross {
+    width: calc(var(--size, 12px) * 1.4);
+    height: calc(var(--size, 12px) * 1.4);
+    position: absolute;
+}
+.neon-shape-cross::before,
+.neon-shape-cross::after {
+    content: '';
+    position: absolute;
+    background: var(--shape-color, #A855F7);
+    box-shadow: 0 0 6px var(--shape-color, #A855F7), 0 0 12px var(--shape-color, #A855F7);
+}
+.neon-shape-cross::before {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.neon-shape-cross::after {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+@keyframes neonShapeFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(0) rotate(var(--rotation, 0deg)) scale(0.5);
+    }
+    15% {
+        opacity: 0.9;
+        transform: translateY(-80px) rotate(calc(var(--rotation, 0deg) + 30deg)) scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-250px) rotate(calc(var(--rotation, 0deg) + 90deg)) scale(0.95);
+    }
+    80% {
+        opacity: 0.3;
+        transform: translateY(-420px) rotate(calc(var(--rotation, 0deg) + 150deg)) scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-550px) rotate(calc(var(--rotation, 0deg) + 200deg)) scale(0.6);
+    }
 }
