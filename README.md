@@ -51,8 +51,7 @@ A central interactive Life Book that gathers and preserves all life events acros
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="50" alt="Bootstrap 5" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" alt="JavaScript ES6+" />
 <img src="https://www.svgrepo.com/show/353754/font-awesome.svg" height="50" alt="Font Awesome" />
-<img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png
-" height="50" alt="Font Awesome" />
+<img src="images/readme_images/figma_logo_icon_147289.png" height="50" alt="Figma" />
 
 </div>
 
