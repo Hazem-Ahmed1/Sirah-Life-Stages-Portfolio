@@ -68,8 +68,8 @@ HTML5 • CSS3 • Bootstrap 5.3 RTL • JS ES6+ • Font Awesome • Google Fon
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/hayati.git
-   cd hayati
+   git clone https://github.com/Hazem-Ahmed1/Sirah-Life-Stages-Portfolio.git
+   cd Sirah-Life-Stages-Portfolio
    ```
 
 2. **Open in browser**
