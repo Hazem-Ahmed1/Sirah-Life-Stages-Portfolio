@@ -96,6 +96,18 @@ body {
     font-size: 0.8rem;
 }
 
+.nav-btn-logout {
+    background: #fee2e2;
+    color: #dc2626 !important;
+    border-color: #fca5a5;
+    margin-right: 6px;
+}
+.nav-btn-logout:hover {
+    background: #dc2626;
+    color: #fff !important;
+    border-color: #dc2626;
+}
+
 /* Language buttons */
 .lang-btn {
     width: 32px;

@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/pin.css" />
   </head>
   <body>
@@ -41,7 +41,7 @@
 
       <h2>Enter PIN</h2>
       <p class="sub">مرحبا بك يا محمد</p>
-
+      <p class="sub">PIN Code : 123456</p>
       <!-- hidden real input -->
       <input
         type="tel"
@@ -200,6 +200,7 @@
           eR.style.height = "18px";
           head.style.transform = "translateX(-50%) scale(1.08)";
           setTimeout(() => card.classList.remove("success"), 400);
+          setTimeout(() => { window.location.href = "index.html"; }, 900);
         } else {
           // Wrong — shake + sad
           card.classList.add("wrong");

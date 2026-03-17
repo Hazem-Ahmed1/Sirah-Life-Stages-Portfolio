@@ -179,6 +179,18 @@ body {
     font-size: 0.8rem;
 }
 
+.nav-btn-logout {
+    background: rgba(220,38,38,0.15);
+    color: #f87171 !important;
+    border-color: rgba(248,113,113,0.3);
+    margin-right: 6px;
+}
+.nav-btn-logout:hover {
+    background: #dc2626;
+    color: #fff !important;
+    border-color: #dc2626;
+}
+
 /* Language buttons */
 .lang-btn {
     width: 32px;
