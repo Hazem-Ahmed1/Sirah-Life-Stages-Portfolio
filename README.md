@@ -17,14 +17,12 @@ A beautifully designed, bilingual (Arabic/English) web application that document
 > Bold neon-accented theme with geometric shapes, dark mode aesthetic, and a pencil-drawing loader.
 
 ### Adults Stage (مرحلة البلوغ)
-![Adults Page](images/readme_images/screencapture-127-0-0-1-63583-adults-html-2026-03-17-02_16_09.png)
-> Elegant gold-and-dark theme with cursor-light effect, premium feel, and 3D-box loading animation.
-
 ![Adults Page](images/readme_images/screencapture-127-0-0-1-63583-adults-html-2026-03-17-02_16_24.png)
+> Elegant gold-and-dark theme with cursor-light effect, premium feel, and 3D-box loading animation.
 
 
 ![Book](images/readme_images/screencapture-127-0-0-1-63583-adults-html-2026-03-17-02_09_30.png)
-> Elegant gold-and-dark theme with cursor-light effect, premium feel, and 3D-box loading animation.
+A central interactive Life Book that gathers and preserves all life events across stages.
 
 ---
 
@@ -52,12 +50,15 @@ A beautifully designed, bilingual (Arabic/English) web application that document
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50" alt="CSS3" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="50" alt="Bootstrap 5" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" alt="JavaScript ES6+" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fontawesome/fontawesome-original.svg" height="50" alt="Font Awesome" />
+<img src="https://www.svgrepo.com/show/353754/font-awesome.svg" height="50" alt="Font Awesome" />
+<img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png
+" height="50" alt="Font Awesome" />
 
 </div>
 
+
 <p align="center">
-HTML5 • CSS3 • Bootstrap 5.3 RTL • JS ES6+ • Font Awesome • Google Fonts • Unsplash
+HTML5 • CSS3 • Bootstrap 5.3 RTL • JS ES6+ • Font Awesome • Google Fonts • Figma
 </p>
 
 ---
@@ -68,7 +69,7 @@ HTML5 • CSS3 • Bootstrap 5.3 RTL • JS ES6+ • Font Awesome • Google Fon
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com//hayati.git
+   git clone https://github.com/hayati.git
    cd hayati
    ```
 
